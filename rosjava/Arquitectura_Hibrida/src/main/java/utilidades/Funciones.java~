@@ -1,0 +1,43 @@
+package utilidades;
+
+/**
+ * Clase de funciones auxiliares, por ejemplo, matemáticas, para el 
+ * uso del resto del sistema.
+ * 
+ * @author José Luis Díaz Cebrián
+ * @version 1.0
+ * 
+ */
+public class Funciones {
+	
+	/**
+	 * Método auxiliar que devuelve el mínimo valor de un array de valores double.
+	 * 
+	 * @param valores El array de valores
+	 * @return El mínimo valor del array
+	 */
+	public static double minimo(double[] valores){
+		double min = valores[0];
+		for(int i=1; i<valores.length; i++){
+			if(valores[i]<min)
+				min = valores[i];
+		}
+		return min;
+	}
+	
+	/**
+	 * Método auxiliar que devuelve el maximo valor de un array de valores double.
+	 * 
+	 * @param valores El array de valores
+	 * @return El maximo valor del array
+	 */
+	public static double maximo(double[] valores){
+		double max = valores[0];
+		for(int i=1; i<valores.length; i++){
+			if(valores[i]>max)
+				max = valores[i];
+		}
+		return max;
+	}
+
+}

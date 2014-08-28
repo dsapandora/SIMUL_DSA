@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Export-Package: org.apache.xmlrpc.client;uses:="org.apache.xmlrpc,org.
+ apache.xmlrpc.common,org.apache.xmlrpc.serializer,org.apache.xmlrpc.u
+ til,org.apache.commons.httpclient.methods,org.xml.sax,org.apache.comm
+ ons.httpclient.auth,org.apache.commons.httpclient.params,org.apache.c
+ ommons.httpclient,javax.net,javax.net.ssl,org.apache.xmlrpc.parser";v
+ ersion="0.0.0.SNAPSHOT",org.apache.xmlrpc.client.util;uses:="org.apac
+ he.xmlrpc.client,org.apache.xmlrpc.common";version="0.0.0.SNAPSHOT"
+Bundle-Version: 0.0.0.SNAPSHOT
+Tool: Bnd-1.50.0
+Bundle-Name: apache_xmlrpc_client
+Bnd-LastModified: 1367667676120
+Created-By: 1.6.0_27 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: ros.rosjava_core.apache_xmlrpc_client
+Import-Package: javax.net,javax.net.ssl,org.apache.commons.httpclient;
+ version="[3.1,4)",org.apache.commons.httpclient.auth;version="[3.1,4)
+ ",org.apache.commons.httpclient.methods;version="[3.1,4)",org.apache.
+ commons.httpclient.params;version="[3.1,4)",org.apache.xmlrpc;version
+ ="[0.0,1)",org.apache.xmlrpc.common;version="[0.0,1)",org.apache.xmlr
+ pc.parser;version="[0.0,1)",org.apache.xmlrpc.serializer;version="[0.
+ 0,1)",org.apache.xmlrpc.util;version="[0.0,1)",org.xml.sax
+

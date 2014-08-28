@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" hostname="ubuntu-pc" name="org.ros.internal.node.response.StringListResultFactoryTest" tests="1" time="0.009" timestamp="2013-04-04T10:33:28">
+  <properties />
+  <testcase classname="org.ros.internal.node.response.StringListResultFactoryTest" name="testEncodeAndDecode" time="0.001" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

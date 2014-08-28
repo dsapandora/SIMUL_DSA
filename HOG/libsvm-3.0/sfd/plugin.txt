@@ -1,0 +1,18 @@
+                        == The Plugin Protocol ==
+
+					"Try to give a cool demo" -- Rob Pike
+
+Each plugin is a module which should have two necessary attributes:
+"plugin_name" and "create". "plugin_name" is the unique name of the plugin.
+"create" is a callable which produces new components.
+
+"create" has one parameter "callback". callback has a "log" attribute which if
+being called with a message will display it. A component created by "create"
+use two attributes to describe its interface: "input_description" and
+"output_description", each is a list of tuples of the form (name, interface).
+"name" is the name of the port and "interface" is its type. A component should
+contain a "run" callable which accepts parameters specified in its
+input_description and return a dictionary specified by its output_description.
+A component can also optionally have "configure" and "view" callable
+attributes. "configure" is called if users choose to set parameters of this
+component and "view" is called if users choose to view this component.

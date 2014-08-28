@@ -1,0 +1,16 @@
+/root/research/vehiculo_manejador/build/CMakeFiles/ROSBUILD_genmsg_cpp.dir
+/root/research/vehiculo_manejador/build/CMakeFiles/ROSBUILD_genmsg_lisp.dir
+/root/research/vehiculo_manejador/build/CMakeFiles/ROSBUILD_gensrv_cpp.dir
+/root/research/vehiculo_manejador/build/CMakeFiles/ROSBUILD_gensrv_lisp.dir
+/root/research/vehiculo_manejador/build/CMakeFiles/clean-test-results.dir
+/root/research/vehiculo_manejador/build/CMakeFiles/drive_base.dir
+/root/research/vehiculo_manejador/build/CMakeFiles/rosbuild_precompile.dir
+/root/research/vehiculo_manejador/build/CMakeFiles/rosbuild_premsgsrvgen.dir
+/root/research/vehiculo_manejador/build/CMakeFiles/rospack_genmsg.dir
+/root/research/vehiculo_manejador/build/CMakeFiles/rospack_genmsg_libexe.dir
+/root/research/vehiculo_manejador/build/CMakeFiles/rospack_gensrv.dir
+/root/research/vehiculo_manejador/build/CMakeFiles/test.dir
+/root/research/vehiculo_manejador/build/CMakeFiles/test-future.dir
+/root/research/vehiculo_manejador/build/CMakeFiles/test-results.dir
+/root/research/vehiculo_manejador/build/CMakeFiles/test-results-run.dir
+/root/research/vehiculo_manejador/build/CMakeFiles/tests.dir

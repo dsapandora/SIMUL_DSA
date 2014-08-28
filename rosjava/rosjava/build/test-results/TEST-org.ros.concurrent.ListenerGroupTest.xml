@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" hostname="ubuntu-pc" name="org.ros.concurrent.ListenerGroupTest" tests="3" time="0.549" timestamp="2013-04-04T10:33:29">
+  <properties />
+  <testcase classname="org.ros.concurrent.ListenerGroupTest" name="testOneListenerMultipleSignals" time="0.004" />
+  <testcase classname="org.ros.concurrent.ListenerGroupTest" name="testMultipleListenersMultipleSignals" time="0.027" />
+  <testcase classname="org.ros.concurrent.ListenerGroupTest" name="testSignalOrder" time="0.516" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

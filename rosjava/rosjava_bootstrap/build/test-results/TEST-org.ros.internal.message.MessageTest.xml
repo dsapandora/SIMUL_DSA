@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" hostname="ubuntu-pc" name="org.ros.internal.message.MessageTest" tests="9" time="0.059" timestamp="2013-04-04T10:33:38">
+  <properties />
+  <testcase classname="org.ros.internal.message.MessageTest" name="testString" time="0.029" />
+  <testcase classname="org.ros.internal.message.MessageTest" name="testCreateEmptyMessage" time="0.001" />
+  <testcase classname="org.ros.internal.message.MessageTest" name="testCreateEmptyMessageWithBlankLines" time="0.001" />
+  <testcase classname="org.ros.internal.message.MessageTest" name="testStringWithComments" time="0.001" />
+  <testcase classname="org.ros.internal.message.MessageTest" name="testInt8" time="0.002" />
+  <testcase classname="org.ros.internal.message.MessageTest" name="testNestedMessage" time="0.004" />
+  <testcase classname="org.ros.internal.message.MessageTest" name="testNestedMessageList" time="0.003" />
+  <testcase classname="org.ros.internal.message.MessageTest" name="testConstantInt8" time="0.002" />
+  <testcase classname="org.ros.internal.message.MessageTest" name="testConstantString" time="0.001" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

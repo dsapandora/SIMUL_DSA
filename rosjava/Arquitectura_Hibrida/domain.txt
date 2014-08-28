@@ -1,0 +1,49 @@
+#Elementos
+Movil Lugar Obstaculo
+#Predicados
+Esta_En Movil Lugar
+Se_Encuentra Obstaculo Lugar
+En_Medio Movil Lugar Obstaculo Obstaculo
+Conectado Lugar Lugar
+Detectado Movil Obstaculo
+Libre Movil
+Orientado Movil Lugar
+Colision Movil Obstaculo
+#Acciones
+@ MantenerDireccion Movil.1 Lugar.1 Lugar.2
+. Esta_En Movil.1 Lugar.1
+. Conectado Lugar.1 Lugar.2
+. Orientado Movil.1 Lugar.2
+. Libre Movil.1
+- Esta_En Movil.1 Lugar.1
+- Orientado Movil.1 Lugar.2
++ Esta_En Movil.1 Lugar.2
+@ Orientarse Movil.1 Lugar.1 Lugar.2
+. Esta_En Movil.1 Lugar.1
+. Conectado Lugar.1 Lugar.2
++ Orientado Movil.1 Lugar.2
+@ EncontrarAlgo Movil.1 Lugar.1 Obstaculo.1
+. Esta_En Movil.1 Lugar.1
+. Se_Encuentra Obstaculo.1 Lugar.1
+. Libre Movil.1
+- Libre Movil.1
++ Detectado Movil.1 Obstaculo.1
+@ Retroceder Movil.1 Lugar.1 Obstaculo.1
+. Esta_En Movil.1 Lugar.1
+. Se_Encuentra Obstaculo.1 Lugar.1
+. Detectado Movil.1 Obstaculo.1
+. Colision Movil.1 Obstaculo.1
+- Detectado Movil.1 Obstaculo.1
+- Colision Movil.1 Obstaculo.1
++ Libre Movil.1
+@ SituarseMedio Movil.1 Lugar.1 Obstaculo.1 Obstaculo.2
+. Esta_En Movil.1 Lugar.1
+. Se_Encuentra Obstaculo.1 Lugar.1
+. Se_Encuentra Obstaculo.2 Lugar.1
++ En_Medio Movil.1 Lugar.1 Obstaculo.1 Obstaculo.2
+@ Rodear Movil.1 Lugar.1 Obstaculo.1
+. Esta_En Movil.1 Lugar.1
+. Se_Encuentra Obstaculo.1 Lugar.1
+. Detectado Movil.1 Obstaculo.1
+- Detectado Movil.1 Obstaculo.1
++ Libre Movil.1

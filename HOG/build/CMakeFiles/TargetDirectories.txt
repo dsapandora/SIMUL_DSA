@@ -1,0 +1,17 @@
+/root/research/HOG/build/CMakeFiles/Controlador.dir
+/root/research/HOG/build/CMakeFiles/Planificador.dir
+/root/research/HOG/build/CMakeFiles/ROSBUILD_genmsg_cpp.dir
+/root/research/HOG/build/CMakeFiles/ROSBUILD_genmsg_lisp.dir
+/root/research/HOG/build/CMakeFiles/ROSBUILD_gensrv_cpp.dir
+/root/research/HOG/build/CMakeFiles/ROSBUILD_gensrv_lisp.dir
+/root/research/HOG/build/CMakeFiles/clean-test-results.dir
+/root/research/HOG/build/CMakeFiles/rosbuild_precompile.dir
+/root/research/HOG/build/CMakeFiles/rosbuild_premsgsrvgen.dir
+/root/research/HOG/build/CMakeFiles/rospack_genmsg.dir
+/root/research/HOG/build/CMakeFiles/rospack_genmsg_libexe.dir
+/root/research/HOG/build/CMakeFiles/rospack_gensrv.dir
+/root/research/HOG/build/CMakeFiles/test.dir
+/root/research/HOG/build/CMakeFiles/test-future.dir
+/root/research/HOG/build/CMakeFiles/test-results.dir
+/root/research/HOG/build/CMakeFiles/test-results-run.dir
+/root/research/HOG/build/CMakeFiles/tests.dir

@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Export-Package: org.ros.rosjava_tutorial_pubsub;uses:="std_msgs,org.ap
+ ache.commons.logging,org.ros.node,org.ros.message,org.ros.node.topic,
+ org.ros.namespace,org.ros.internal.message,org.ros.concurrent,org.ros
+ .rosjava_geometry,org.ros.internal.message.definition,geometry_msgs";
+ version="0.0.0.SNAPSHOT"
+Bundle-Version: 0.0.0.SNAPSHOT
+Tool: Bnd-1.50.0
+Bundle-Name: rosjava_tutorial_pubsub
+Bnd-LastModified: 1366193959924
+Created-By: 1.6.0_27 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: ros.rosjava_core.rosjava_tutorial_pubsub
+Import-Package: geometry_msgs;version="[0.0,1)",org.apache.commons.log
+ ging;version="[1.1,2)",org.ros.concurrent,org.ros.internal.message;ve
+ rsion="[0.0,1)",org.ros.internal.message.definition;version="[0.0,1)"
+ ,org.ros.message;version="[0.0,1)",org.ros.namespace;version="[0.0,1)
+ ",org.ros.node,org.ros.node.topic,org.ros.rosjava_geometry;version="[
+ 0.0,1)",std_msgs;version="[0.0,1)"
+

@@ -1,0 +1,36 @@
+Manifest-Version: 1.0
+Export-Package: planificador.gestorPlanes;uses:="infraestructura,plani
+ ficador.modeloMundo,utilidades";version="0.0.0.SNAPSHOT",secuenciador
+ .memoria;uses:="planificador.gestorPlanes,secuenciador.interprete,inf
+ raestructura,planificador.modeloMundo";version="0.0.0.SNAPSHOT",secue
+ nciador.interprete;uses:="planificador.gestorPlanes,secuenciador.memo
+ ria,infraestructura,controlador.gestorHabilidades,planificador.modelo
+ Mundo";version="0.0.0.SNAPSHOT",controlador.vision;uses:="infraestruc
+ tura,controlador.gestorHabilidades";version="0.0.0.SNAPSHOT",infraest
+ ructura;uses:="org.ros.node,planificador.gestorPlanes,secuenciador.in
+ terprete,controlador.gestorHabilidades,std_msgs,org.ros.message,org.r
+ os.node.topic,planificador.modeloMundo,org.ros.internal.message,org.r
+ os.rosjava_geometry,org.ros.internal.message.definition,geometry_msgs
+ ,org.ros.namespace";version="0.0.0.SNAPSHOT",utilidades;version="0.0.
+ 0.SNAPSHOT",controlador.gestorHabilidades;uses:="infraestructura,plan
+ ificador.gestorPlanes,secuenciador.interprete,planificador.modeloMund
+ o,controlador.navegacion,secuenciador.memoria";version="0.0.0.SNAPSHO
+ T",org.rosjava.TREST;uses:="planificador.gestorPlanes,secuenciador.in
+ terprete,infraestructura,org.ros.namespace,org.ros.node,planificador.
+ modeloMundo";version="0.0.0.SNAPSHOT",controlador.navegacion;uses:="i
+ nfraestructura,controlador.gestorHabilidades,utilidades,planificador.
+ modeloMundo";version="0.0.0.SNAPSHOT",planificador.modeloMundo;uses:=
+ utilidades;version="0.0.0.SNAPSHOT"
+Bundle-Version: 0.0.0.SNAPSHOT
+Tool: Bnd-1.50.0
+Bundle-Name: Arquitectura_Hibrida
+Bnd-LastModified: 1367667681875
+Created-By: 1.6.0_27 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: ros.rosjava_core.Arquitectura_Hibrida
+Import-Package: geometry_msgs;version="[0.0,1)",org.ros.internal.messa
+ ge;version="[0.0,1)",org.ros.internal.message.definition;version="[0.
+ 0,1)",org.ros.message;version="[0.0,1)",org.ros.namespace;version="[0
+ .0,1)",org.ros.node,org.ros.node.topic,org.ros.rosjava_geometry;versi
+ on="[0.0,1)",std_msgs;version="[0.0,1)"
+

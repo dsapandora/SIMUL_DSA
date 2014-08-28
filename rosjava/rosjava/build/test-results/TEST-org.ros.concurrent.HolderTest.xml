@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" hostname="ubuntu-pc" name="org.ros.concurrent.HolderTest" tests="4" time="0.006" timestamp="2013-04-04T10:33:30">
+  <properties />
+  <testcase classname="org.ros.concurrent.HolderTest" name="testHolderFailsWithNoValue" time="0.0" />
+  <testcase classname="org.ros.concurrent.HolderTest" name="testHolderFailsIfSetTwice" time="0.0" />
+  <testcase classname="org.ros.concurrent.HolderTest" name="testHolderEquality" time="0.0" />
+  <testcase classname="org.ros.concurrent.HolderTest" name="testHolderAwait" time="0.001" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,47 @@
+cmake_minimum_required(VERSION 2.4.6)
+include($ENV{ROS_ROOT}/core/rosbuild/rosbuild.cmake)
+
+# Set the build type.  Options are:
+#  Coverage       : w/ debug symbols, w/o optimization, w/ code-coverage
+#  Debug          : w/ debug symbols, w/o optimization
+#  Release        : w/o debug symbols, w/ optimization
+#  RelWithDebInfo : w/ debug symbols, w/ optimization
+#  MinSizeRel     : w/o debug symbols, w/ optimization, stripped binaries
+#set(ROS_BUILD_TYPE RelWithDebInfo)
+
+rosbuild_init()
+set (OPENNN_DIR  /usr/local/opennn)
+set(OPENNN_BUILD_DIR ${OPENNN_DIR}/build/make/debug)
+set(TINYXML_BUILD_DIR  ${OPENNN_DIR}/build/make/debug)
+set (LIB_OPENNN  ${OPENNN_BUILD_DIR}/libopennn.a)
+set(LIB_TINYXML  ${TINYXML_BUILD_DIR}/libtinyxml.a)
+set(LIBS  ${LIB_OPENNN} ${LIB_TINYXML})
+set(WEBOTS_HOME /usr/local/webots)
+set(EXECUTABLE_OUTPUT_PATH /root/research/PROYECTOTP/controllers/controlador)
+add_definitions(-I${WEBOTS_HOME}/include/controller/cpp -I${WEBOTS_HOME}/include -O2 -Wall -ggdb -pg -g3  -I${WEBOTS_HOME}/include/controller/c -DLINUX)
+find_package(OpenCV REQUIRED)
+
+#uncomment if you have defined messages
+#rosbuild_genmsg()
+#uncomment if you have defined services
+#rosbuild_gensrv()
+
+#common commands for building c++ executables and libraries
+#rosbuild_add_library(${PROJECT_NAME} src/example.cpp)
+#target_link_libraries(${PROJECT_NAME} another_library)
+#rosbuild_add_boost_directories()
+#rosbuild_link_boost(${PROJECT_NAME} thread)
+#rosbuild_add_executable(example examples/example.cpp)
+#target_link_libraries(example ${PROJECT_NAME})
+
+
+rosbuild_add_executable(controlador /root/research/PROYECTOTP/controllers/controlador/controlador.cpp)
+rosbuild_add_executable(autonomous_vehicle /root/research/PROYECTOTP/controllers/autonomous_vehicle/autonomous_vehicle.cpp)
+rosbuild_add_executable(RedNeuronal /root/research/PROYECTOTP/controllers/RedNeuronal/RedNeuronal.cpp)
+
+find_library(CONTROLLER_LIBRARY Controller ${WEBOTS_HOME}/lib)
+
+target_link_libraries(controlador   ${OpenCV_LIBS} ${CONTROLLER_LIBRARY})
+target_link_libraries(autonomous_vehicle   ${OpenCV_LIBS} ${CONTROLLER_LIBRARY})
+target_link_libraries(RedNeuronal ${CONTROLLER_LIBRARY})
+target_link_libraries(RedNeuronal ${LIBS})

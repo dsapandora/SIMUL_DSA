@@ -1,0 +1,97 @@
+package planificador.modeloMundo;
+
+import java.util.LinkedList;
+
+/**
+ * Clase que representa una localización concreta dentro del mapa, 
+ * definida por un nombre único del nodo, y las localizaciones que 
+ * están conectadas a ellas mediante arcos.
+ * 
+ * @author José Luis Díaz Cebrián
+ * @version 1.0
+ * 
+ */
+public class Nodo {
+
+	/**
+	 * Identificador único del nodo del mapa.
+	 */
+	private String identificador;
+	
+	/**
+	 * Lista de conexiones del nodo con otros nodos del mapa.
+	 */
+	private LinkedList<Arco> conexiones;
+	
+	
+	/**
+	 * Inicializa por defecto con los atributos a null.
+	 */
+	public Nodo(){}
+	
+	/**
+	 * Inicializa el nodo asignándole un identificador único. Posteriormente, se 
+	 * deben asignar las conexiones de este nodo con otros nodos del mapa.
+	 * 
+	 * @param id El identificador del nodo
+	 */
+	public Nodo(String id){
+		this.identificador = id;
+		this.conexiones = new LinkedList<Arco>();
+	}
+	
+	
+	/**
+	 * Devuelve el identificador único del nodo.
+	 * 
+	 * @return El identificador del nodo
+	 */
+	public String getId(){
+		return this.identificador;
+	}
+	
+	/**
+	 * Devuelve la lista de conexiones del nodo con otros nodos del mapa.
+	 * 
+	 * @return La lista de arcos en los que participa el nodo
+	 */
+	public LinkedList<Arco> getConexiones(){
+		return this.conexiones;
+	}
+	
+	/**
+	 * Asigna un nuevo identificador único al nodo.
+	 * 
+	 * @param id El nuevo identificador del nodo
+	 */
+	public void setId(String id){
+		this.identificador = id;
+	}
+	
+	/**
+	 * Añade un nuevo arco a la lista de conexiones del nodo.
+	 * 
+	 * @param arco La conexión a añadir a la lista
+	 */
+	public void anyadirConexion(Arco arco){
+		this.conexiones.add(arco);
+	}
+	
+	/**
+	 * Indica si un nodo está conectado con otro en el mapa del modelo del mundo. Dos
+	 * nodos están conectados si existe un arco en el mapa definido por estos dos nodos.
+	 * 
+	 * @param otro El nodo del que se desea saber su conexión
+	 * @return "true" si los dos nodos están conectados, "false" en caso contrario
+	 */
+	public boolean estaConectado(Nodo otro){
+		boolean conexion = false;
+		int i = 0;
+		while(i<this.conexiones.size() && !conexion){
+			Nodo[] conx = this.conexiones.get(i).getLocalizaciones();
+			if(conx[0].getId().compareTo(otro.getId())==0 || conx[1].getId().compareTo(otro.getId())==0)
+				conexion = true;
+		}
+		return conexion;
+	}
+}

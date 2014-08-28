@@ -1,0 +1,14 @@
+<package>
+  <description brief="vehiculo_manejador">
+
+     vehiculo_manejador
+
+  </description>
+  <author>root</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/vehiculo_manejador</url>
+
+</package>
+
+

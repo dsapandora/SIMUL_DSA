@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" hostname="ubuntu-pc" name="org.ros.internal.transport.tcp.TcpRosServerTest" tests="3" time="0.058" timestamp="2013-04-04T10:33:29">
+  <properties />
+  <testcase classname="org.ros.internal.transport.tcp.TcpRosServerTest" name="testFailIfStartedWhileRunning" time="0.014" />
+  <testcase classname="org.ros.internal.transport.tcp.TcpRosServerTest" name="testGetAddressFailsIfServerNotRunning" time="0.016" />
+  <testcase classname="org.ros.internal.transport.tcp.TcpRosServerTest" name="testFailIfPortTaken" time="0.021" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

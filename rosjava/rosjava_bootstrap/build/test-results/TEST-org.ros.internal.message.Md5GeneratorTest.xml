@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" hostname="ubuntu-pc" name="org.ros.internal.message.Md5GeneratorTest" tests="9" time="0.228" timestamp="2013-04-04T10:33:37">
+  <properties />
+  <testcase classname="org.ros.internal.message.Md5GeneratorTest" name="testString" time="0.063" />
+  <testcase classname="org.ros.internal.message.Md5GeneratorTest" name="testHeader" time="0.004" />
+  <testcase classname="org.ros.internal.message.Md5GeneratorTest" name="testArrays" time="0.008" />
+  <testcase classname="org.ros.internal.message.Md5GeneratorTest" name="testComposite" time="0.015" />
+  <testcase classname="org.ros.internal.message.Md5GeneratorTest" name="testOdometry" time="0.016" />
+  <testcase classname="org.ros.internal.message.Md5GeneratorTest" name="testEmpty" time="0.005" />
+  <testcase classname="org.ros.internal.message.Md5GeneratorTest" name="testAddTwoInts" time="0.004" />
+  <testcase classname="org.ros.internal.message.Md5GeneratorTest" name="testTransitiveSrv" time="0.007" />
+  <testcase classname="org.ros.internal.message.Md5GeneratorTest" name="testPrimitives" time="0.003" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

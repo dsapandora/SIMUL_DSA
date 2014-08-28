@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="/usr/local/webots/lib/Controller.jar"/>
+	<classpathentry kind="lib" path="/home/ubuntu/workspace/hg/Aria/Aria/java/javaclient3.jar"/>
+	<classpathentry kind="lib" path="/home/ubuntu/workspace/hg/Aria/Aria/java/Aria.jar"/>
+	<classpathentry kind="lib" path="/home/ubuntu/workspace/hg/Aria/Aria/java/ArNetworking.jar"/>
+	<classpathentry kind="lib" path="/usr/local/webots/lib/RCXController.jar"/>
+	<classpathentry kind="lib" path="/home/ubuntu/workspace/rosjava/rosjava/build/libs/rosjava-0.0.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="/home/ubuntu/workspace/rosjava/rosjava_benchmarks/build/libs/rosjava_benchmarks-0.0.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="/home/ubuntu/workspace/rosjava/rosjava_bootstrap/build/libs/rosjava_bootstrap-0.0.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="/home/ubuntu/workspace/rosjava/rosjava_geometry/build/libs/rosjava_geometry-0.0.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="/home/ubuntu/workspace/rosjava/rosjava_messages/build/libs/rosjava_messages-0.0.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="/home/ubuntu/workspace/rosjava/rosjava_test/build/libs/rosjava_test-0.0.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="/home/ubuntu/workspace/rosjava/rosjava_tutorial_pubsub/build/libs/rosjava_tutorial_pubsub-0.0.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="/home/ubuntu/workspace/rosjava/rosjava_tutorial_right_hand_rule/build/libs/rosjava_tutorial_right_hand_rule-0.0.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="/home/ubuntu/workspace/rosjava/rosjava_tutorial_services/build/libs/rosjava_tutorial_services-0.0.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="/home/ubuntu/workspace/rosjava/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="/home/ubuntu/workspace/rosjava/apache_xmlrpc_server/build/libs/apache_xmlrpc_server-0.0.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="/home/ubuntu/workspace/rosjava/apache_xmlrpc_common/build/libs/apache_xmlrpc_common-0.0.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="/home/ubuntu/workspace/rosjava/apache_xmlrpc_client/build/libs/apache_xmlrpc_client-0.0.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="/home/ubuntu/workspace/rosjava/commons-logging-api-1.0.4.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

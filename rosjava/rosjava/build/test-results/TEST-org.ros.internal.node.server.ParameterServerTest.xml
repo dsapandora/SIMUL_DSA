@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" hostname="ubuntu-pc" name="org.ros.internal.node.server.ParameterServerTest" tests="11" time="0.012" timestamp="2013-04-04T10:33:28">
+  <properties />
+  <testcase classname="org.ros.internal.node.server.ParameterServerTest" name="testGetNonExistent" time="0.0" />
+  <testcase classname="org.ros.internal.node.server.ParameterServerTest" name="testSetAndGetShallow" time="0.0" />
+  <testcase classname="org.ros.internal.node.server.ParameterServerTest" name="testSetAndGetDeep" time="0.006" />
+  <testcase classname="org.ros.internal.node.server.ParameterServerTest" name="testSetAndGet" time="0.0" />
+  <testcase classname="org.ros.internal.node.server.ParameterServerTest" name="testSetDeepAndGetShallow" time="0.001" />
+  <testcase classname="org.ros.internal.node.server.ParameterServerTest" name="testSetOverwritesMap" time="0.0" />
+  <testcase classname="org.ros.internal.node.server.ParameterServerTest" name="testSetAndGetFloat" time="0.0" />
+  <testcase classname="org.ros.internal.node.server.ParameterServerTest" name="testDeleteShallow" time="0.0" />
+  <testcase classname="org.ros.internal.node.server.ParameterServerTest" name="testDeleteDeep" time="0.0" />
+  <testcase classname="org.ros.internal.node.server.ParameterServerTest" name="testHas" time="0.0" />
+  <testcase classname="org.ros.internal.node.server.ParameterServerTest" name="testGetNames" time="0.0" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

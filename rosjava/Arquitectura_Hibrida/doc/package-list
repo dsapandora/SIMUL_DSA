@@ -1,0 +1,10 @@
+
+controlador.gestorHabilidades
+controlador.navegacion
+controlador.vision
+infraestructura
+planificador.gestorPlanes
+planificador.modeloMundo
+secuenciador.interprete
+secuenciador.memoria
+utilidades

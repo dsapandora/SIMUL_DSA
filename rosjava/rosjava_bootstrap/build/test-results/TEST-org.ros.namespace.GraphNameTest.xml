@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" hostname="ubuntu-pc" name="org.ros.namespace.GraphNameTest" tests="11" time="0.166" timestamp="2013-04-04T10:33:38">
+  <properties />
+  <testcase classname="org.ros.namespace.GraphNameTest" name="testIsPrivate" time="0.001" />
+  <testcase classname="org.ros.namespace.GraphNameTest" name="testIsRelative" time="0.0" />
+  <testcase classname="org.ros.namespace.GraphNameTest" name="testGetParent" time="0.001" />
+  <testcase classname="org.ros.namespace.GraphNameTest" name="testCanonicalizeName" time="0.001" />
+  <testcase classname="org.ros.namespace.GraphNameTest" name="testGetName" time="0.0" />
+  <testcase classname="org.ros.namespace.GraphNameTest" name="testJoin" time="0.0" />
+  <testcase classname="org.ros.namespace.GraphNameTest" name="testNewAnonymous" time="0.126" />
+  <testcase classname="org.ros.namespace.GraphNameTest" name="testValidNames" time="0.0" />
+  <testcase classname="org.ros.namespace.GraphNameTest" name="testInvalidNames" time="0.004" />
+  <testcase classname="org.ros.namespace.GraphNameTest" name="testIsGlobal" time="0.002" />
+  <testcase classname="org.ros.namespace.GraphNameTest" name="testToString" time="0.002" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

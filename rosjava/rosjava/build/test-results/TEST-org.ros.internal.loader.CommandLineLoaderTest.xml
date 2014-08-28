@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" hostname="ubuntu-pc" name="org.ros.internal.loader.CommandLineLoaderTest" tests="4" time="0.031" timestamp="2013-04-04T10:33:29">
+  <properties />
+  <testcase classname="org.ros.internal.loader.CommandLineLoaderTest" name="testCommandLineLoader" time="0.009" />
+  <testcase classname="org.ros.internal.loader.CommandLineLoaderTest" name="testcreateConfigurationEnvironment" time="0.002" />
+  <testcase classname="org.ros.internal.loader.CommandLineLoaderTest" name="testCreateConfigurationCommandLine" time="0.003" />
+  <testcase classname="org.ros.internal.loader.CommandLineLoaderTest" name="testcreateConfigurationResolver" time="0.002" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

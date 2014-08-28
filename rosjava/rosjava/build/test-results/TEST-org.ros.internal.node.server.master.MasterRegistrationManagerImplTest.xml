@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" hostname="ubuntu-pc" name="org.ros.internal.node.server.master.MasterRegistrationManagerImplTest" tests="19" time="0.05" timestamp="2013-04-04T10:33:28">
+  <properties />
+  <testcase classname="org.ros.internal.node.server.master.MasterRegistrationManagerImplTest" name="testRegisterOnlyPublisher" time="0.011" />
+  <testcase classname="org.ros.internal.node.server.master.MasterRegistrationManagerImplTest" name="testRegisterOnlySubscriber" time="0.001" />
+  <testcase classname="org.ros.internal.node.server.master.MasterRegistrationManagerImplTest" name="testOnlySubscriberWildcard" time="0.002" />
+  <testcase classname="org.ros.internal.node.server.master.MasterRegistrationManagerImplTest" name="testSubscriberSubscriber" time="0.001" />
+  <testcase classname="org.ros.internal.node.server.master.MasterRegistrationManagerImplTest" name="testSubscriberSubscriberWildcard" time="0.002" />
+  <testcase classname="org.ros.internal.node.server.master.MasterRegistrationManagerImplTest" name="testSubscriberPublisher" time="0.001" />
+  <testcase classname="org.ros.internal.node.server.master.MasterRegistrationManagerImplTest" name="testPublisherSubscriber" time="0.002" />
+  <testcase classname="org.ros.internal.node.server.master.MasterRegistrationManagerImplTest" name="testPublisherPublisher" time="0.001" />
+  <testcase classname="org.ros.internal.node.server.master.MasterRegistrationManagerImplTest" name="testNodeNameRepeated" time="0.002" />
+  <testcase classname="org.ros.internal.node.server.master.MasterRegistrationManagerImplTest" name="testSinglePublisherRemoved" time="0.001" />
+  <testcase classname="org.ros.internal.node.server.master.MasterRegistrationManagerImplTest" name="testTwoPublishersOneRemoved" time="0.0" />
+  <testcase classname="org.ros.internal.node.server.master.MasterRegistrationManagerImplTest" name="testSingleSubscriberRemoved" time="0.0" />
+  <testcase classname="org.ros.internal.node.server.master.MasterRegistrationManagerImplTest" name="testTwoSubscribersOneRemoved" time="0.001" />
+  <testcase classname="org.ros.internal.node.server.master.MasterRegistrationManagerImplTest" name="testSubscriberTwice" time="0.005" />
+  <testcase classname="org.ros.internal.node.server.master.MasterRegistrationManagerImplTest" name="testPublisherTwice" time="0.003" />
+  <testcase classname="org.ros.internal.node.server.master.MasterRegistrationManagerImplTest" name="testRegisterOnlyService" time="0.002" />
+  <testcase classname="org.ros.internal.node.server.master.MasterRegistrationManagerImplTest" name="testRegisterUnregisterService" time="0.001" />
+  <testcase classname="org.ros.internal.node.server.master.MasterRegistrationManagerImplTest" name="testRegisterUnregisterServiceWithPublisher" time="0.0" />
+  <testcase classname="org.ros.internal.node.server.master.MasterRegistrationManagerImplTest" name="testRegisterServiceReplaceNode" time="0.001" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

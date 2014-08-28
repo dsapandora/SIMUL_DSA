@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" hostname="ubuntu-pc" name="org.ros.internal.message.field.ArrayFieldTest" tests="14" time="0.016" timestamp="2013-04-04T10:33:38">
+  <properties />
+  <testcase classname="org.ros.internal.message.field.ArrayFieldTest" name="testByteArrayFieldVariableSize" time="0.002" />
+  <testcase classname="org.ros.internal.message.field.ArrayFieldTest" name="testByteArrayFieldFixedSize" time="0.0" />
+  <testcase classname="org.ros.internal.message.field.ArrayFieldTest" name="testDoubleArrayFieldVariableSize" time="0.0" />
+  <testcase classname="org.ros.internal.message.field.ArrayFieldTest" name="testDoubleArrayFieldFixedSize" time="0.0" />
+  <testcase classname="org.ros.internal.message.field.ArrayFieldTest" name="testFloatArrayFieldVariableSize" time="0.0" />
+  <testcase classname="org.ros.internal.message.field.ArrayFieldTest" name="testFloatArrayFieldFixedSize" time="0.001" />
+  <testcase classname="org.ros.internal.message.field.ArrayFieldTest" name="testIntegerArrayFieldVariableSize" time="0.0" />
+  <testcase classname="org.ros.internal.message.field.ArrayFieldTest" name="testIntegerArrayFieldFixedSize" time="0.0" />
+  <testcase classname="org.ros.internal.message.field.ArrayFieldTest" name="testLongArrayFieldVariableSize" time="0.0" />
+  <testcase classname="org.ros.internal.message.field.ArrayFieldTest" name="testLongArrayFieldFixedSize" time="0.0" />
+  <testcase classname="org.ros.internal.message.field.ArrayFieldTest" name="testShortArrayFieldVariableSize" time="0.0" />
+  <testcase classname="org.ros.internal.message.field.ArrayFieldTest" name="testShortArrayFieldFixedSize" time="0.0" />
+  <testcase classname="org.ros.internal.message.field.ArrayFieldTest" name="testBooleanArrayFieldVariableSize" time="0.001" />
+  <testcase classname="org.ros.internal.message.field.ArrayFieldTest" name="testBooleanArrayFieldFixedSize" time="0.0" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

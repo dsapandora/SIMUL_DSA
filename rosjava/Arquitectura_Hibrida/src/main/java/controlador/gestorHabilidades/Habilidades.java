@@ -1,0 +1,104 @@
+package controlador.gestorHabilidades;
+
+import infraestructura.Robot;
+
+import java.util.HashMap;
+import java.util.Map;
+import controlador.navegacion.*;
+
+/**
+ * Agregado de habilidades, se trata de la lista que incluye 
+ * todas las habilidades implementadas que puede ejecutar el 
+ * robot. Esta clase las engloba y proporciona el acceso a ellas. 
+ * 
+ * @author Jose Luis Diaz Cebrian
+ * @version 1.0
+ * 
+ */
+public class Habilidades {
+
+	/**
+	 * Conjunto de habilidades que forman la instancia del agregado. Se identifican dentro del conjunto
+	 * por una cadena de caracteres correspondiente al nombre de cada habilidad.
+	 */
+	private Map<String, Habilidad> habilidades;
+	
+	
+	/**
+	 * Inicializa un conjunto de habilidades para un robot concreto, creando y rellenando dicho 
+	 * conjunto. Si el parametro esta a "true", el conjunto sera el de todas las habilidades del 
+	 * sistema. En caso contrario, se crea un conjunto vacio.
+	 * 
+	 * @param todas "true" si se quiere generar el conjunto completo de habilidades del robot
+	 * @param robot El robot del sistema que hace uso de las habilidades
+	 * @param sim A "true" si se utiliza la arquitectura sobre simulador
+	 */
+	public Habilidades(boolean todas, Robot robot, boolean sim){
+		this.habilidades = new HashMap<String, Habilidad>();
+		if(todas){
+			/* TODO Descomentar cuando este implementada esta nueva habilidad */
+			this.habilidades.put("IrA", new IrA(robot, sim));
+			this.habilidades.put("SeguirPared", new SeguirPared(true, robot, sim));
+			this.habilidades.put("EvitarObstaculo", new EvitarObstaculo(true, robot, sim));
+			this.habilidades.put("Avanzar", new Avanzar(robot, sim));
+			/* TODO Modificar a mano los parametros mientras no se utilice el planificador */
+			this.habilidades.put("Girar", new Girar(robot, sim, false, 4, 90));
+			this.habilidades.put("CubrirDistancia", new CubrirDistancia(robot, sim, 240));
+			this.habilidades.put("Recuperarse", new Recuperarse(robot, sim));
+			this.habilidades.put("Esperar", new Esperar(robot, sim));
+			this.habilidades.put("Finalizar", new Finalizar(robot, sim));
+		}
+	}
+	
+	
+	/**
+	 * Devuelve el conjunto de habilidades.
+	 * 
+	 * @return El conjunto de habilidades
+	 * 
+	 */
+	public Map<String, Habilidad> getHabilidades(){
+		return this.habilidades;
+	}
+	
+	/**
+	 * Devuelve una habilidad concreta que forma parte del conjunto de habilidades.
+	 * 
+	 * @param id El identificador (nombre) de la habilidad
+	 * @return La habilidad con dicho identificador
+	 * 
+	 */
+	public Habilidad getHabilidad(String id){
+		return this.habilidades.get(id);
+	}
+	
+	/**
+	 * Anade una habilidad al conjunto de habilidades
+	 * 
+	 * @param habilidad La habilidad a anadir al conjunto
+	 * 
+	 */
+	public void anyadirHabilidad(Habilidad habilidad){
+
+		this.habilidades.put(habilidad.getId(), habilidad);
+              
+	}
+	
+	/**
+	 * Elimina una habilidad concreta del conjunto de habilidades.
+	 * 
+	 * @param id El identificador (nombre) de la habilidad a eliminar
+	 * 
+	 */
+	public void eliminarHabilidad(String id){
+		this.habilidades.remove(id);
+	}
+	
+	/**
+	 * Elimina todas las habilidades del conjunto, dejandolo vacio para su posterior redefinicion.
+	 */
+	public void eliminarTodas(){
+		this.habilidades.clear();
+	}
+	
+}

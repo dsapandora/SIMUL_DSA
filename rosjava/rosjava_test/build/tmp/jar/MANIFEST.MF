@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Export-Package: org.ros;uses:="nav_msgs,org.ros.node.topic,org.ros.nod
+ e,org.ros.message,org.ros.namespace,std_msgs,org.ros.concurrent,test_
+ ros,org.apache.commons.logging,org.ros.node.parameter";version="0.0.0
+ .SNAPSHOT"
+Bundle-Version: 0.0.0.SNAPSHOT
+Tool: Bnd-1.50.0
+Bundle-Name: rosjava_test
+Bnd-LastModified: 1366193959492
+Created-By: 1.6.0_27 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: ros.rosjava_core.rosjava_test
+Import-Package: nav_msgs;version="[0.0,1)",org.apache.commons.logging;
+ version="[1.1,2)",org.ros.concurrent,org.ros.message;version="[0.0,1)
+ ",org.ros.namespace;version="[0.0,1)",org.ros.node,org.ros.node.param
+ eter,org.ros.node.topic,std_msgs;version="[0.0,1)",test_ros;version="
+ [0.0,1)"
+

@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Export-Package: org.ros.rosjava_benchmarks;uses:="std_msgs,org.ros.con
+ current,geometry_msgs,org.ros.node,org.ros.message,org.ros.node.topic
+ ,org.ros.namespace,tf,org.ros.rosjava_geometry";version="0.0.0.SNAPSH
+ OT"
+Bundle-Version: 0.0.0.SNAPSHOT
+Tool: Bnd-1.50.0
+Bundle-Name: rosjava_benchmarks
+Bnd-LastModified: 1366193956716
+Created-By: 1.6.0_27 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: ros.rosjava_core.rosjava_benchmarks
+Import-Package: geometry_msgs;version="[0.0,1)",org.ros.concurrent,org
+ .ros.message;version="[0.0,1)",org.ros.namespace;version="[0.0,1)",or
+ g.ros.node,org.ros.node.topic,org.ros.rosjava_geometry;version="[0.0,
+ 1)",std_msgs;version="[0.0,1)",tf;version="[0.0,1)"
+

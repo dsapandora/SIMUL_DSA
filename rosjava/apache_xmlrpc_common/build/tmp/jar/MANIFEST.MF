@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Export-Package: org.apache.xmlrpc.util;uses:="org.apache.xmlrpc.common
+ ,org.apache.ws.commons.util,org.apache.xmlrpc,javax.xml.parsers,org.x
+ ml.sax";version="0.0.0.SNAPSHOT",org.apache.xmlrpc.common;uses:="org.
+ w3c.dom,org.apache.xmlrpc.parser,org.apache.ws.commons.util,org.apach
+ e.xmlrpc.serializer,org.xml.sax,org.apache.xmlrpc.util,org.apache.xml
+ rpc";version="0.0.0.SNAPSHOT",org.apache.xmlrpc;uses:="org.apache.xml
+ rpc.common";version="0.0.0.SNAPSHOT",org.apache.xmlrpc.jaxb;uses:="or
+ g.apache.xmlrpc,org.apache.xmlrpc.parser,javax.xml.bind,org.xml.sax,o
+ rg.apache.xmlrpc.serializer,org.apache.xmlrpc.common,org.apache.ws.co
+ mmons.util";version="0.0.0.SNAPSHOT",org.apache.xmlrpc.parser;uses:="
+ javax.xml.namespace,org.xml.sax,org.apache.ws.commons.util,org.apache
+ .xmlrpc.common,javax.xml.parsers,org.apache.ws.commons.serialize,org.
+ w3c.dom,org.apache.xmlrpc";version="0.0.0.SNAPSHOT",org.apache.xmlrpc
+ .serializer;uses:="org.apache.xmlrpc.common,org.apache.xmlrpc,org.apa
+ che.ws.commons.serialize,org.xml.sax,org.apache.ws.commons.util,org.x
+ ml.sax.helpers,org.w3c.dom";version="0.0.0.SNAPSHOT"
+Bundle-Version: 0.0.0.SNAPSHOT
+Tool: Bnd-1.50.0
+Bundle-Name: apache_xmlrpc_common
+Bnd-LastModified: 1367667675769
+Created-By: 1.6.0_27 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: ros.rosjava_core.apache_xmlrpc_common
+Import-Package: javax.xml.bind,javax.xml.namespace,javax.xml.parsers,o
+ rg.apache.ws.commons.serialize,org.apache.ws.commons.util,org.w3c.dom
+ ,org.xml.sax,org.xml.sax.helpers
+

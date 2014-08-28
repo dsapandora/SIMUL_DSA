@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" hostname="ubuntu-pc" name="org.ros.internal.message.RawMessageSerializationTest" tests="19" time="0.114" timestamp="2013-04-04T10:33:38">
+  <properties />
+  <testcase classname="org.ros.internal.message.RawMessageSerializationTest" name="testString" time="0.02" />
+  <testcase classname="org.ros.internal.message.RawMessageSerializationTest" name="testInt8" time="0.002" />
+  <testcase classname="org.ros.internal.message.RawMessageSerializationTest" name="testNestedMessage" time="0.004" />
+  <testcase classname="org.ros.internal.message.RawMessageSerializationTest" name="testBool" time="0.003" />
+  <testcase classname="org.ros.internal.message.RawMessageSerializationTest" name="testUint8" time="0.001" />
+  <testcase classname="org.ros.internal.message.RawMessageSerializationTest" name="testInt16" time="0.004" />
+  <testcase classname="org.ros.internal.message.RawMessageSerializationTest" name="testUInt16" time="0.002" />
+  <testcase classname="org.ros.internal.message.RawMessageSerializationTest" name="testInt32" time="0.002" />
+  <testcase classname="org.ros.internal.message.RawMessageSerializationTest" name="testUInt32" time="0.003" />
+  <testcase classname="org.ros.internal.message.RawMessageSerializationTest" name="testInt64" time="0.002" />
+  <testcase classname="org.ros.internal.message.RawMessageSerializationTest" name="testUInt64" time="0.011" />
+  <testcase classname="org.ros.internal.message.RawMessageSerializationTest" name="testFloat32" time="0.005" />
+  <testcase classname="org.ros.internal.message.RawMessageSerializationTest" name="testFloat64" time="0.003" />
+  <testcase classname="org.ros.internal.message.RawMessageSerializationTest" name="testTime" time="0.002" />
+  <testcase classname="org.ros.internal.message.RawMessageSerializationTest" name="testDuration" time="0.004" />
+  <testcase classname="org.ros.internal.message.RawMessageSerializationTest" name="testNestedMessageArray" time="0.007" />
+  <testcase classname="org.ros.internal.message.RawMessageSerializationTest" name="testChannelBuffer" time="0.002" />
+  <testcase classname="org.ros.internal.message.RawMessageSerializationTest" name="testInt32Array" time="0.003" />
+  <testcase classname="org.ros.internal.message.RawMessageSerializationTest" name="testFloat64Array" time="0.002" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

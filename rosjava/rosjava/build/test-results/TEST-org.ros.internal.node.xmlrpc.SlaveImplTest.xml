@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" hostname="ubuntu-pc" name="org.ros.internal.node.xmlrpc.SlaveImplTest" tests="5" time="0.249" timestamp="2013-04-04T10:33:28">
+  <properties />
+  <testcase classname="org.ros.internal.node.xmlrpc.SlaveImplTest" name="testGetPublicationsEmptyList" time="0.174" />
+  <testcase classname="org.ros.internal.node.xmlrpc.SlaveImplTest" name="testGetPublications" time="0.025" />
+  <testcase classname="org.ros.internal.node.xmlrpc.SlaveImplTest" name="testGetPidNotSupported" time="0.003" />
+  <testcase classname="org.ros.internal.node.xmlrpc.SlaveImplTest" name="testGetPid" time="0.002" />
+  <testcase classname="org.ros.internal.node.xmlrpc.SlaveImplTest" name="testRequestTopic" time="0.03" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

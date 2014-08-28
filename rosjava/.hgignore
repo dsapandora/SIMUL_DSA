@@ -1,0 +1,25 @@
+syntax: glob
+*.class
+*.dex
+*.orig
+*.swp
+*.pyc
+*.DS_Store
+*~
+*.log
+*.ap_
+*.apk
+.cproject
+.settings
+.classpath
+.project
+.gradle
+target
+build
+dist
+msg_gen
+srv_gen
+gen
+libs
+bin
+docs/src/main/sphinx/conf.py

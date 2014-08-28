@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" hostname="ubuntu-pc" name="org.ros.internal.node.xmlrpc.MasterXmlRpcEndpointImplTest" tests="7" time="0.05" timestamp="2013-04-04T10:33:28">
+  <properties />
+  <testcase classname="org.ros.internal.node.xmlrpc.MasterXmlRpcEndpointImplTest" name="testRegisterPublisher" time="0.029" />
+  <testcase classname="org.ros.internal.node.xmlrpc.MasterXmlRpcEndpointImplTest" name="testGetUri" time="0.001" />
+  <testcase classname="org.ros.internal.node.xmlrpc.MasterXmlRpcEndpointImplTest" name="testLookupNodeExisting" time="0.001" />
+  <testcase classname="org.ros.internal.node.xmlrpc.MasterXmlRpcEndpointImplTest" name="testLookupNodeNotExisting" time="0.002" />
+  <testcase classname="org.ros.internal.node.xmlrpc.MasterXmlRpcEndpointImplTest" name="testRegisterPublisherWithNoSubscribers" time="0.007" />
+  <testcase classname="org.ros.internal.node.xmlrpc.MasterXmlRpcEndpointImplTest" name="testRegisterSubscriberWithNoSubscribers" time="0.002" />
+  <testcase classname="org.ros.internal.node.xmlrpc.MasterXmlRpcEndpointImplTest" name="testRegisterSubscriber" time="0.002" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

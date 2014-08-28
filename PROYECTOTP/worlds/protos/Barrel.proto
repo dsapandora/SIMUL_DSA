@@ -1,0 +1,35 @@
+# Road barrier
+
+PROTO Barrel [
+  field SFVec3f translation 0 0.6 0
+  field SFRotation rotation 0 1 0 0
+  field SFFloat height 1.2
+  field SFFloat radius 0.4
+  field SFFloat mass 100
+]
+{
+  Solid {
+    translation IS translation
+    rotation IS rotation
+    children [
+      DEF BARREL_SHAPE Shape {
+        appearance Appearance {
+          texture ImageTexture {
+            url [
+              "textures/barrel.png"
+            ]
+          }
+        }
+        geometry Cylinder {
+          height IS height
+          radius IS radius
+        }
+      }
+    ]
+    boundingObject USE BARREL_SHAPE
+    physics Physics {
+      density -1
+      mass IS mass
+    }
+  }
+}

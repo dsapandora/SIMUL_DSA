@@ -1,0 +1,111 @@
+package planificador.gestorPlanes;
+
+/**
+ * Clase que representa la parte mínima del estado del modelo del mundo 
+ * del concepto clásico de planificación. Define una verdad en el modelo 
+ * del mundo en la que se ven involucrados uno o varios elementos del 
+ * modelo.
+ * 
+ * @author José Luis Díaz Cebrián
+ * @version 1.0
+ *
+ */
+public class Predicado {
+
+	/**
+	 * Identificador único del predicado dentro del dominio del planificador.
+	 */
+	private String nombre;
+	
+	/**
+	 * Serie de elementos que, junto con el nombre, definen el predicado.
+	 */
+	private Elemento[] elementos;
+	
+	
+	/**
+	 * Constructor por defecto para la librería de metas, que no necesita de
+	 * predicados reales. NO USAR PARA CREAR PREDICADOS PARA EL PLANIFICADOR.
+	 */
+	public Predicado(){
+		this.nombre = "LIB";
+		this.elementos = null;
+	}
+	
+	/**
+	 * Inicializa el predicado, asignando un tipo y el conjunto ordenado de 
+	 * elementos que lo definen.
+	 * 
+	 * @param nombre El identificador del predicado
+	 * @param elem El array de elementos que forman el predicado
+	 */
+	public Predicado(String nombre, Elemento[] elem){
+		this.nombre = nombre;
+		this.elementos = new Elemento[elem.length];
+		for(int i=0; i<elem.length; i++){
+			this.elementos[i] = elem[i];
+		}
+	}
+
+	
+	/**
+	 * Devuelve el identificador (nombre) del predicado.
+	 * 
+	 * @return El nombre del predicado
+	 */
+	public String getNombre() {
+		return this.nombre;
+	}
+	
+	/**
+	 * Devuelve la serie de elementos que definen el predicado.
+	 * 
+	 * @return EL array de elementos del predicado
+	 */
+	public Elemento[] getElementos(){
+		return this.elementos;
+	}
+	
+	/**
+	 * Asigna un nuevo identificador (nombre) al predicado.
+	 * 
+	 * @param nombre El nuevo nombre del predicado
+	 */
+	public void setNombre(String nombre){
+		this.nombre = nombre;
+	}
+	
+	/**
+	 * Asigna un elemento concreto al predicado.
+	 * 
+	 * @param elemento El elemento a asignar
+	 * @param pos La posición del elemento dentro del array
+	 */
+	public void setElemento(Elemento elemento, int pos){
+		if(pos>=0 && pos<this.elementos.length)
+			this.elementos[pos] = elemento;
+	}
+
+	/**
+	 * Indica si un predicado es igual al otro. Dos predicados son iguales si 
+	 * tienen el mismo nombre y si todos sus elementos son del mismo tipo.
+	 * 
+	 * @param predicado El predicado con el que se desea comparar
+	 * @return "true" si los dos predicados son iguales, "false" en caso contrario
+	 */
+	public boolean esIgual(Predicado predicado) {
+		boolean iguales = true;
+		if(this.nombre.compareTo(predicado.getNombre())!=0)
+			iguales = false;
+		Elemento[] otros = predicado.getElementos();
+		if(this.elementos.length!=otros.length)
+			iguales = false;
+		int i=0;
+		while(i<this.elementos.length && iguales){
+			if(this.elementos[i].getTipo().compareTo(otros[i].getTipo())!=0)
+				iguales = false;
+		}
+		return iguales;
+	}
+	
+}

@@ -1,0 +1,11 @@
+<!--xml-->
+<launch>
+  <node ns="camera" pkg="uvc_camera" type="camera_node" name="uvc_camera" output="screen">
+    <param name="width" type="int" value="640" />
+    <param name="height" type="int" value="480" />
+    <param name="fps" type="int" value="50" />
+    <param name="frame" type="string" value="webcam" />
+    <param name="Brightness" type="int" value="100" />
+    <param name="device" type="string" value="/dev/video0" />
+  </node>
+</launch>

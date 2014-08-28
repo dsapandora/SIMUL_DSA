@@ -1,0 +1,20 @@
+<package>
+  <description brief="tutorialROSOpenCV">
+
+     tutorialROSOpenCV
+
+  </description>
+  <author>root</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/tutorialROSOpenCV</url>
+  <depend package="image_transport"/>
+  <depend package="roscpp"/>
+  <depend package="std_msgs"/>
+  <depend package="opencv2"/>
+  <depend package="uvc_camera"/>
+  <depend package="cv_bridge" />
+
+</package>
+
+

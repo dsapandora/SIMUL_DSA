@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" hostname="ubuntu-pc" name="org.ros.node.service.ServiceIntegrationTest" tests="2" time="0.21" timestamp="2013-04-04T10:33:21">
+  <properties />
+  <testcase classname="org.ros.node.service.ServiceIntegrationTest" name="testRequestFailure" time="0.117" />
+  <testcase classname="org.ros.node.service.ServiceIntegrationTest" name="testPesistentServiceConnection" time="0.09" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[abr 04, 2013 12:33:21 PM org.ros.internal.node.client.Registrar <init>
+INFO: MasterXmlRpcEndpoint URI: http://127.0.0.1:43551/
+abr 04, 2013 12:33:21 PM org.ros.internal.node.client.Registrar onPublisherAdded
+INFO: Registering publisher: Publisher<PublisherDefinition<PublisherIdentifier<NodeIdentifier</server, http://127.0.0.1:41396/>, TopicIdentifier</rosout>>, Topic<TopicIdentifier</rosout>, TopicDescription<rosgraph_msgs/Log, acffd30cd6b6de30f120938c17c593fb>>>>
+abr 04, 2013 12:33:21 PM org.ros.internal.node.client.Registrar callMaster
+INFO: Response<Success, Success, []>
+abr 04, 2013 12:33:21 PM org.ros.internal.node.topic.DefaultPublisher$1 onMasterRegistrationSuccess
+INFO: Publisher registered: Publisher<PublisherDefinition<PublisherIdentifier<NodeIdentifier</server, http://127.0.0.1:41396/>, TopicIdentifier</rosout>>, Topic<TopicIdentifier</rosout>, TopicDescription<rosgraph_msgs/Log, acffd30cd6b6de30f120938c17c593fb>>>>
+abr 04, 2013 12:33:21 PM org.ros.internal.node.client.Registrar onServiceServerAdded
+INFO: Registering service: ServiceServer<ServiceDeclaration</add_two_ints, ServiceDescription<test_ros/AddTwoInts, 6a2e34150c00229791cc89ff309fff21>>>
+abr 04, 2013 12:33:21 PM org.ros.internal.node.client.Registrar callMaster
+INFO: Response<Success, Success, null>
+abr 04, 2013 12:33:21 PM org.ros.internal.node.service.DefaultServiceServer$1 onMasterRegistrationSuccess
+INFO: Service registered: ServiceServer<ServiceDeclaration</add_two_ints, ServiceDescription<test_ros/AddTwoInts, 6a2e34150c00229791cc89ff309fff21>>>
+abr 04, 2013 12:33:21 PM org.ros.internal.node.client.Registrar <init>
+INFO: MasterXmlRpcEndpoint URI: http://127.0.0.1:43551/
+abr 04, 2013 12:33:21 PM org.ros.internal.node.client.Registrar onPublisherAdded
+INFO: Registering publisher: Publisher<PublisherDefinition<PublisherIdentifier<NodeIdentifier</client, http://127.0.0.1:51466/>, TopicIdentifier</rosout>>, Topic<TopicIdentifier</rosout>, TopicDescription<rosgraph_msgs/Log, acffd30cd6b6de30f120938c17c593fb>>>>
+abr 04, 2013 12:33:21 PM org.ros.internal.node.client.Registrar callMaster
+INFO: Response<Success, Success, []>
+abr 04, 2013 12:33:21 PM org.ros.internal.node.topic.DefaultPublisher$1 onMasterRegistrationSuccess
+INFO: Publisher registered: Publisher<PublisherDefinition<PublisherIdentifier<NodeIdentifier</client, http://127.0.0.1:51466/>, TopicIdentifier</rosout>>, Topic<TopicIdentifier</rosout>, TopicDescription<rosgraph_msgs/Log, acffd30cd6b6de30f120938c17c593fb>>>>
+abr 04, 2013 12:33:21 PM org.ros.internal.node.client.Registrar onPublisherRemoved
+INFO: Unregistering publisher: Publisher<PublisherDefinition<PublisherIdentifier<NodeIdentifier</client, http://127.0.0.1:51466/>, TopicIdentifier</rosout>>, Topic<TopicIdentifier</rosout>, TopicDescription<rosgraph_msgs/Log, acffd30cd6b6de30f120938c17c593fb>>>>
+abr 04, 2013 12:33:21 PM org.ros.internal.node.client.Registrar callMaster
+INFO: Response<Success, Success, 1>
+abr 04, 2013 12:33:21 PM org.ros.internal.node.topic.DefaultPublisher$1 onMasterUnregistrationSuccess
+INFO: Publisher unregistered: Publisher<PublisherDefinition<PublisherIdentifier<NodeIdentifier</client, http://127.0.0.1:51466/>, TopicIdentifier</rosout>>, Topic<TopicIdentifier</rosout>, TopicDescription<rosgraph_msgs/Log, acffd30cd6b6de30f120938c17c593fb>>>>
+abr 04, 2013 12:33:21 PM org.ros.node.DefaultNodeMainExecutor safelyShutdownNode
+INFO: Shutdown successful.
+abr 04, 2013 12:33:21 PM org.ros.internal.node.client.Registrar onPublisherRemoved
+INFO: Unregistering publisher: Publisher<PublisherDefinition<PublisherIdentifier<NodeIdentifier</server, http://127.0.0.1:41396/>, TopicIdentifier</rosout>>, Topic<TopicIdentifier</rosout>, TopicDescription<rosgraph_msgs/Log, acffd30cd6b6de30f120938c17c593fb>>>>
+abr 04, 2013 12:33:21 PM org.ros.internal.node.client.Registrar callMaster
+INFO: Response<Success, Success, 1>
+abr 04, 2013 12:33:21 PM org.ros.internal.node.topic.DefaultPublisher$1 onMasterUnregistrationSuccess
+INFO: Publisher unregistered: Publisher<PublisherDefinition<PublisherIdentifier<NodeIdentifier</server, http://127.0.0.1:41396/>, TopicIdentifier</rosout>>, Topic<TopicIdentifier</rosout>, TopicDescription<rosgraph_msgs/Log, acffd30cd6b6de30f120938c17c593fb>>>>
+abr 04, 2013 12:33:21 PM org.ros.node.DefaultNodeMainExecutor safelyShutdownNode
+INFO: Shutdown successful.
+abr 04, 2013 12:33:22 PM org.ros.internal.node.client.Registrar <init>
+INFO: MasterXmlRpcEndpoint URI: http://127.0.0.1:52026/
+abr 04, 2013 12:33:22 PM org.ros.internal.node.client.Registrar onPublisherAdded
+INFO: Registering publisher: Publisher<PublisherDefinition<PublisherIdentifier<NodeIdentifier</server, http://127.0.0.1:59876/>, TopicIdentifier</rosout>>, Topic<TopicIdentifier</rosout>, TopicDescription<rosgraph_msgs/Log, acffd30cd6b6de30f120938c17c593fb>>>>
+abr 04, 2013 12:33:22 PM org.ros.internal.node.client.Registrar callMaster
+INFO: Response<Success, Success, []>
+abr 04, 2013 12:33:22 PM org.ros.internal.node.topic.DefaultPublisher$1 onMasterRegistrationSuccess
+INFO: Publisher registered: Publisher<PublisherDefinition<PublisherIdentifier<NodeIdentifier</server, http://127.0.0.1:59876/>, TopicIdentifier</rosout>>, Topic<TopicIdentifier</rosout>, TopicDescription<rosgraph_msgs/Log, acffd30cd6b6de30f120938c17c593fb>>>>
+abr 04, 2013 12:33:22 PM org.ros.internal.node.client.Registrar onServiceServerAdded
+INFO: Registering service: ServiceServer<ServiceDeclaration</add_two_ints, ServiceDescription<test_ros/AddTwoInts, 6a2e34150c00229791cc89ff309fff21>>>
+abr 04, 2013 12:33:22 PM org.ros.internal.node.client.Registrar callMaster
+INFO: Response<Success, Success, null>
+abr 04, 2013 12:33:22 PM org.ros.internal.node.service.DefaultServiceServer$1 onMasterRegistrationSuccess
+INFO: Service registered: ServiceServer<ServiceDeclaration</add_two_ints, ServiceDescription<test_ros/AddTwoInts, 6a2e34150c00229791cc89ff309fff21>>>
+abr 04, 2013 12:33:22 PM org.ros.internal.node.client.Registrar <init>
+INFO: MasterXmlRpcEndpoint URI: http://127.0.0.1:52026/
+abr 04, 2013 12:33:22 PM org.ros.internal.node.client.Registrar onPublisherAdded
+INFO: Registering publisher: Publisher<PublisherDefinition<PublisherIdentifier<NodeIdentifier</client, http://127.0.0.1:42786/>, TopicIdentifier</rosout>>, Topic<TopicIdentifier</rosout>, TopicDescription<rosgraph_msgs/Log, acffd30cd6b6de30f120938c17c593fb>>>>
+abr 04, 2013 12:33:22 PM org.ros.internal.node.client.Registrar callMaster
+INFO: Response<Success, Success, []>
+abr 04, 2013 12:33:22 PM org.ros.internal.node.topic.DefaultPublisher$1 onMasterRegistrationSuccess
+INFO: Publisher registered: Publisher<PublisherDefinition<PublisherIdentifier<NodeIdentifier</client, http://127.0.0.1:42786/>, TopicIdentifier</rosout>>, Topic<TopicIdentifier</rosout>, TopicDescription<rosgraph_msgs/Log, acffd30cd6b6de30f120938c17c593fb>>>>
+abr 04, 2013 12:33:22 PM org.ros.internal.node.client.Registrar onPublisherRemoved
+INFO: Unregistering publisher: Publisher<PublisherDefinition<PublisherIdentifier<NodeIdentifier</client, http://127.0.0.1:42786/>, TopicIdentifier</rosout>>, Topic<TopicIdentifier</rosout>, TopicDescription<rosgraph_msgs/Log, acffd30cd6b6de30f120938c17c593fb>>>>
+abr 04, 2013 12:33:22 PM org.ros.internal.node.client.Registrar callMaster
+INFO: Response<Success, Success, 1>
+abr 04, 2013 12:33:22 PM org.ros.internal.node.topic.DefaultPublisher$1 onMasterUnregistrationSuccess
+INFO: Publisher unregistered: Publisher<PublisherDefinition<PublisherIdentifier<NodeIdentifier</client, http://127.0.0.1:42786/>, TopicIdentifier</rosout>>, Topic<TopicIdentifier</rosout>, TopicDescription<rosgraph_msgs/Log, acffd30cd6b6de30f120938c17c593fb>>>>
+abr 04, 2013 12:33:22 PM org.ros.node.DefaultNodeMainExecutor safelyShutdownNode
+INFO: Shutdown successful.
+abr 04, 2013 12:33:22 PM org.ros.internal.node.client.Registrar onPublisherRemoved
+INFO: Unregistering publisher: Publisher<PublisherDefinition<PublisherIdentifier<NodeIdentifier</server, http://127.0.0.1:59876/>, TopicIdentifier</rosout>>, Topic<TopicIdentifier</rosout>, TopicDescription<rosgraph_msgs/Log, acffd30cd6b6de30f120938c17c593fb>>>>
+abr 04, 2013 12:33:22 PM org.ros.internal.node.client.Registrar callMaster
+INFO: Response<Success, Success, 1>
+abr 04, 2013 12:33:22 PM org.ros.internal.node.topic.DefaultPublisher$1 onMasterUnregistrationSuccess
+INFO: Publisher unregistered: Publisher<PublisherDefinition<PublisherIdentifier<NodeIdentifier</server, http://127.0.0.1:59876/>, TopicIdentifier</rosout>>, Topic<TopicIdentifier</rosout>, TopicDescription<rosgraph_msgs/Log, acffd30cd6b6de30f120938c17c593fb>>>>
+abr 04, 2013 12:33:22 PM org.ros.node.DefaultNodeMainExecutor safelyShutdownNode
+INFO: Shutdown successful.
+]]></system-err>
+</testsuite>

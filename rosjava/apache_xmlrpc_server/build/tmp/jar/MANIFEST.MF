@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Export-Package: org.apache.xmlrpc.metadata;uses:="org.apache.xmlrpc.se
+ rver,org.apache.xmlrpc.common,org.apache.xmlrpc,org.w3c.dom";version=
+ "0.0.0.SNAPSHOT",org.apache.xmlrpc.webserver;uses:="org.apache.xmlrpc
+ .server,org.apache.xmlrpc.util,org.apache.xmlrpc.common,org.apache.xm
+ lrpc";version="0.0.0.SNAPSHOT",org.apache.xmlrpc.server;uses:="org.ap
+ ache.xmlrpc,org.apache.xmlrpc.metadata,org.apache.xmlrpc.common,org.a
+ pache.commons.logging,org.apache.xmlrpc.parser,org.apache.xmlrpc.util
+ ,org.apache.xmlrpc.serializer,org.xml.sax";version="0.0.0.SNAPSHOT"
+Bundle-Version: 0.0.0.SNAPSHOT
+Tool: Bnd-1.50.0
+Bundle-Name: apache_xmlrpc_server
+Bnd-LastModified: 1367667676425
+Created-By: 1.6.0_27 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: ros.rosjava_core.apache_xmlrpc_server
+Import-Package: org.apache.commons.logging;version="[1.1,2)",org.apach
+ e.xmlrpc;version="[0.0,1)",org.apache.xmlrpc.common;version="[0.0,1)"
+ ,org.apache.xmlrpc.parser;version="[0.0,1)",org.apache.xmlrpc.seriali
+ zer;version="[0.0,1)",org.apache.xmlrpc.util;version="[0.0,1)",org.w3
+ c.dom,org.xml.sax
+

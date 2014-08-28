@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" hostname="ubuntu-pc" name="org.ros.rosjava_geometry.QuaternionTest" tests="4" time="0.009" timestamp="2013-04-04T10:33:40">
+  <properties />
+  <testcase classname="org.ros.rosjava_geometry.QuaternionTest" name="testInvert" time="0.001" />
+  <testcase classname="org.ros.rosjava_geometry.QuaternionTest" name="testRotateVector" time="0.0" />
+  <testcase classname="org.ros.rosjava_geometry.QuaternionTest" name="testAxisAngleToQuaternion" time="0.001" />
+  <testcase classname="org.ros.rosjava_geometry.QuaternionTest" name="testMultiply" time="0.001" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

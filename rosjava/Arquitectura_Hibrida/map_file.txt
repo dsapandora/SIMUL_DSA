@@ -1,0 +1,5 @@
+#Nodos
+Hab1 Hab2 Hab3
+#Arcos
+Hab1 Hab2 LineaRecta
+Hab2 Hab3 PorPared

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" hostname="ubuntu-pc" name="org.ros.time.NtpTimeProviderTest" tests="1" time="1.173" timestamp="2013-04-04T10:32:58">
+  <properties />
+  <testcase classname="org.ros.time.NtpTimeProviderTest" name="testNtpUbuntuCom" time="1.096" />
+  <system-out><![CDATA[System time: 1365071579421
+NTP time: 1365071579416
+]]></system-out>
+  <system-err><![CDATA[abr 04, 2013 12:32:58 PM org.ros.internal.node.client.Registrar <init>
+INFO: MasterXmlRpcEndpoint URI: http://127.0.0.1:57465/
+abr 04, 2013 12:32:58 PM org.ros.internal.node.client.Registrar onPublisherAdded
+INFO: Registering publisher: Publisher<PublisherDefinition<PublisherIdentifier<NodeIdentifier</node, http://127.0.0.1:54914/>, TopicIdentifier</rosout>>, Topic<TopicIdentifier</rosout>, TopicDescription<rosgraph_msgs/Log, acffd30cd6b6de30f120938c17c593fb>>>>
+abr 04, 2013 12:32:59 PM org.ros.internal.node.client.Registrar callMaster
+INFO: Response<Success, Success, []>
+abr 04, 2013 12:32:59 PM org.ros.internal.node.topic.DefaultPublisher$1 onMasterRegistrationSuccess
+INFO: Publisher registered: Publisher<PublisherDefinition<PublisherIdentifier<NodeIdentifier</node, http://127.0.0.1:54914/>, TopicIdentifier</rosout>>, Topic<TopicIdentifier</rosout>, TopicDescription<rosgraph_msgs/Log, acffd30cd6b6de30f120938c17c593fb>>>>
+abr 04, 2013 12:32:59 PM org.ros.time.NtpTimeProvider updateTime
+INFO: NTP time offset: -5 ms
+abr 04, 2013 12:32:59 PM org.ros.internal.node.client.Registrar onPublisherRemoved
+INFO: Unregistering publisher: Publisher<PublisherDefinition<PublisherIdentifier<NodeIdentifier</node, http://127.0.0.1:54914/>, TopicIdentifier</rosout>>, Topic<TopicIdentifier</rosout>, TopicDescription<rosgraph_msgs/Log, acffd30cd6b6de30f120938c17c593fb>>>>
+abr 04, 2013 12:32:59 PM org.ros.internal.node.client.Registrar callMaster
+INFO: Response<Success, Success, 1>
+abr 04, 2013 12:32:59 PM org.ros.internal.node.topic.DefaultPublisher$1 onMasterUnregistrationSuccess
+INFO: Publisher unregistered: Publisher<PublisherDefinition<PublisherIdentifier<NodeIdentifier</node, http://127.0.0.1:54914/>, TopicIdentifier</rosout>>, Topic<TopicIdentifier</rosout>, TopicDescription<rosgraph_msgs/Log, acffd30cd6b6de30f120938c17c593fb>>>>
+abr 04, 2013 12:32:59 PM org.ros.node.DefaultNodeMainExecutor safelyShutdownNode
+INFO: Shutdown successful.
+]]></system-err>
+</testsuite>

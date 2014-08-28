@@ -1,0 +1,124 @@
+package utilidades;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+/**
+ * Clase auxiliar que representa un fichero tratado en modo escritura.
+ * 
+ * @author José Luis Díaz Cebrián
+ * @version 1.0
+ * 
+ */
+public class FicheroEscritura{
+   
+    /**
+     * Fichero abierto en modo escritura.
+     */
+    private BufferedWriter _fichero;
+    
+    /**
+     * Nombre del fichero.
+     */
+    private String _nombre;
+    
+    
+    /**
+     * Constructor que recibe el nombre de un fichero para tratarlo en modo escritura.
+     * 
+     * @param nombreFichero El nombre del fichero a escribir
+     */
+    public FicheroEscritura(String nombreFichero){
+        _nombre = new String(nombreFichero);
+    }
+    
+    /**
+     * Método que abre el fichero en modo escritura. Si no es posible, devuelve el valor 
+     * booleano "false".
+     * 
+     * @return "true" si se abre el fichero correctamente, "false" en caso contrario
+     */
+    public boolean abrir(){
+        boolean exito;
+        exito = false;
+        try{
+            _fichero = new BufferedWriter(new FileWriter(_nombre));
+            exito = true;
+        }catch(IOException e){
+            System.out.println("Error en la apertura del fichero " + _nombre);
+        }
+        return exito;
+    }
+    
+    /**
+     * Método que escribe un carácter en el fichero.
+     * 
+     * @param c El carácter a escribir en el fichero
+     * @return "true" si se lleva a cabo la escritura sin problemas, "false" en caso contrario
+     */
+    public boolean escribirCaracter(char c){
+        boolean exito;
+        exito = false;
+        try{
+            _fichero.write((int)c);
+            exito = true;
+        }catch(IOException e){
+            System.out.println("Error de escritura en el fichero " + _nombre);
+        }
+        return exito;
+    }
+    
+    /**
+     * Método que escribe una cadena de caracteres.
+     * 
+     * @param cadena La cadena a escribir en el fichero
+     * @return "true" si se lleva a cabo la escritura sin problemas, "false" en caso contrario
+     */
+    public boolean escribirCadena(String cadena){
+        boolean exito;
+        exito = false;
+        try{
+            _fichero.write(cadena);
+            exito = true;
+        }catch(IOException e){
+            System.out.println("Error de escritura en el fichero " + _nombre);
+        }
+        return exito;
+    }
+    
+    /**
+     * Método que escribe el carácter de fin de línea.
+     * 
+     * @return "true" si se lleva a cabo la escritura sin problemas, "false" en caso contrario
+     */
+    public boolean nuevaLinea(){
+        boolean exito;
+        exito = false;
+        try{
+            _fichero.newLine();
+            exito = true;
+        }catch(IOException e){
+            System.out.println("Error de escritura en el fichero " + _nombre);
+        }
+        return exito;
+    }
+    
+    /**
+     * Método que cierra el fichero.
+     * 
+     * @return "true" si se cierra el fichero correctamente, "false" en caso contrario
+     */
+    public boolean cerrar(){
+        boolean exito;
+        exito = false;
+        try{
+            _fichero.close();
+            exito = true;
+        }catch(IOException e){
+            System.out.println("Error al cerrar el fichero " + _nombre);
+        }
+        return exito;
+    }
+    
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER" exported="true"/>
+	<classpathentry kind="src" path="/apache_xmlrpc_common" exported="true"/>
+	<classpathentry sourcepath="/home/ubuntu/.gradle/caches/artifacts-8/filestore/org.apache.ws.commons/ws-commons-util/1.0.1/source/9a4ae65898d4fadb03f281ee2bcbed4200e394b4/ws-commons-util-1.0.1-sources.jar" kind="lib" path="/home/ubuntu/.gradle/caches/artifacts-8/filestore/org.apache.ws.commons/ws-commons-util/1.0.1/jar/126e80ff798fece634bc94e61f8be8a8da00be60/ws-commons-util-1.0.1.jar" exported="true"/>
+	<classpathentry sourcepath="/home/ubuntu/.gradle/caches/artifacts-8/filestore/junit/junit/3.8.1/source/525753763e53f6f76da052b316d0f2e3bfa4d73/junit-3.8.1-sources.jar" kind="lib" path="/home/ubuntu/.gradle/caches/artifacts-8/filestore/junit/junit/3.8.1/jar/99129f16442844f6a4a11ae22fbbee40b14d774f/junit-3.8.1.jar" exported="true"/>
+	<classpathentry sourcepath="/home/ubuntu/.gradle/caches/artifacts-8/filestore/xml-apis/xml-apis/1.0.b2/source/d8525661c5a0a05702fa41873d250d135031ec25/xml-apis-1.0.b2-sources.jar" kind="lib" path="/home/ubuntu/.gradle/caches/artifacts-8/filestore/xml-apis/xml-apis/1.0.b2/jar/3136ca936f64c9d68529f048c2618bd356bf85c9/xml-apis-1.0.b2.jar" exported="true"/>
+</classpath>

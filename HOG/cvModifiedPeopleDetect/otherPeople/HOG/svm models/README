@@ -1,0 +1,23 @@
+This parameters are for the "no overlap" model. If you want to use this model, application parameters must be the following:
+
+window_width=64
+window_height=128
+bins = 9
+cell_size = 8
+block_size = 2
+signed = false
+voter = magnitudevoter
+norm = L2Norm
+overlap = 0
+
+This parameters are for the "with overlap" model. If you want to use this model, application parameters must be the following:
+
+window_width=64
+window_height=128
+bins = 9
+cell_size = 8
+block_size = 2
+signed = false
+voter = magnitudevoter
+norm = L2Norm
+overlap = 1

@@ -1,0 +1,57 @@
+# Pedestrian crossing 20 x 8 meters
+# Elevation 10 cm
+
+PROTO PedestrianCrossing [
+  field SFVec3f translation 0 0 0
+  field SFRotation rotation 0 1 0 0
+]
+{
+  Solid {
+    translation IS translation
+    rotation IS rotation
+    children [
+      DEF ZEBRA_TRANS Transform {
+        translation 0 -0.1 0
+        children [
+          Shape {
+            appearance Appearance {
+              texture ImageTexture {
+                url [
+                  "textures/crossing.png"
+                ]
+              }
+            }
+            geometry Box {
+              size 20 0.4 8
+            }
+          }
+        ]
+      }
+      DEF RAMP1_TRANS Transform {
+        translation 0 -0.2535 4
+        rotation 1 0 0 0.7854
+        children [
+          DEF RAMP_SHAPE Shape {
+            geometry Box {
+              size 19.9 0.5 0.5
+            }
+          }
+        ]
+      }
+      DEF RAMP2_TRANS Transform {
+        translation 0 -0.2535 -4
+        rotation 1 0 0 0.7854
+        children [
+          USE RAMP_SHAPE
+        ]
+      }
+    ]
+    boundingObject Group {
+      children [
+        USE ZEBRA_TRANS
+        USE RAMP1_TRANS
+        USE RAMP2_TRANS
+      ]
+    }
+  }
+}

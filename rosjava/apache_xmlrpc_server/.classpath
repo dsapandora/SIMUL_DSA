@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER" exported="true"/>
+	<classpathentry kind="src" path="/apache_xmlrpc_common" exported="true"/>
+	<classpathentry sourcepath="/home/ubuntu/.gradle/caches/artifacts-8/filestore/org.apache.commons/com.springsource.org.apache.commons.logging/1.1.1/source/f3f156cbff0e0fb0d64bfce31a352cce4a33bc19/com.springsource.org.apache.commons.logging-1.1.1-sources.jar" kind="lib" path="/home/ubuntu/.gradle/caches/artifacts-8/filestore/org.apache.commons/com.springsource.org.apache.commons.logging/1.1.1/jar/7657caf2c78e1d79c74d36f2ae128a115f7cc180/com.springsource.org.apache.commons.logging-1.1.1.jar" exported="true"/>
+</classpath>

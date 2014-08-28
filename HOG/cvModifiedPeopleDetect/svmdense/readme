@@ -1,0 +1,15 @@
+SVM dense is a version of SVM light of Thorsten Joachims. You can download the original SVM light from http://svmlight.joachims.org/. 
+
+We modified SVM light as we were dealing with very high dimensional feature spaces (of order of thousands) and very large number of points (of order of tens of thousands). So we wanted to reduce its memory footprint and speed up its input/output. 
+
+Modifications:
+=============================
+First we removed the index associated with every element of feature vector (as most of elements in our feature vectors were non-zero). Hence the name SVM dense. 
+Second we added binary input/output support. New binary input/output format is much compact and its parsing is many times faster than text input/output.
+
+NOTE
+=============================
+We never tested the modified code extensively. You have been warned!! 
+
+The code is provided as IT IS and we will not provide any support. Please do not send any mails related to it NEITHER to Thorsten Joachims NOR to us.
+

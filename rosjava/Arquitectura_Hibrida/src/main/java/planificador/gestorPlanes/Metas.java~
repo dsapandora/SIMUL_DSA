@@ -1,0 +1,90 @@
+package planificador.gestorPlanes;
+
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * Agregado de metas, se trata de la lista que incluye 
+ * todas las metas posibles que puede perseguir el robot a 
+ * la hora de elaborar el plan. Esta clase las engloba y 
+ * proporciona el acceso a ellas. 
+ * 
+ * @author José Luis Díaz Cebrián
+ * @version 1.0
+ * 
+ */
+public class Metas {
+
+	/**
+	 * Conjunto de metas que forman la instancia del agregado. Se identifican dentro del conjunto
+	 * por el nombre que se da a cada meta.
+	 */
+	private Map<String, Meta> metas;
+	
+	
+	/**
+	 * Inicializa el conjunto o librería de metas del sistema, creando y rellenando dicho 
+	 * librería.
+	 */
+	public Metas(){
+		this.metas = new HashMap<String, Meta>();
+		/* TODO Incluir los predicados correspondientes cuando se implementen */
+		this.metas.put("LlegarA", new Meta("LlegarA", new Predicado()));
+		this.metas.put("DetectarAlgo", new Meta("DetectarAlgo", new Predicado()));
+		this.metas.put("PuntoEnfrente", new Meta("PuntoEnfrente", new Predicado()));
+		this.metas.put("SuperarChoque", new Meta("SuperarChoque", new Predicado()));
+		this.metas.put("MismaDistancia", new Meta("MismaDistancia", new Predicado()));
+		this.metas.put("EvitarChoque", new Meta("EvitarChoque", new Predicado()));
+		this.metas.put("DistanciaRecorrida", new Meta("DistanciaRecorrida", new Predicado()));
+	}
+	
+	
+	/**
+	 * Devuelve el conjunto de metas.
+	 * 
+	 * @return El conjunto de metas
+	 * 
+	 */
+	public Map<String, Meta> getMetas(){
+		return this.metas;
+	}
+	
+	/**
+	 * Devuelve una meta concreta que forma parte de la librería de metas.
+	 * 
+	 * @param nombre El nombre que identifica a la meta
+	 * @return La meta cuyo identificador coincide con dicho nombre
+	 * 
+	 */
+	public Meta getMeta(String nombre){
+		return this.metas.get(nombre);
+	}
+	
+	/**
+	 * Añade una meta al conjunto de metas
+	 * 
+	 * @param meta La meta a añadir al conjunto
+	 * 
+	 */
+	public void anyadirMeta(Meta meta){
+		this.metas.put(meta.getNombre(), meta);
+	}
+	
+	/**
+	 * Elimina una meta concreta del conjunto de habilidades.
+	 * 
+	 * @param nombre El identificador de la meta a eliminar del conjunto
+	 * 
+	 */
+	public void eliminarMeta(String nombre){
+		this.metas.remove(nombre);
+	}
+	
+	/**
+	 * Elimina todas las metas del conjunto, dejándolo vacío para su posterior redefinición.
+	 */
+	public void eliminarTodas(){
+		this.metas.clear();
+	}
+	
+}

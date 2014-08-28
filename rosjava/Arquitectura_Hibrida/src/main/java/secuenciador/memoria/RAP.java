@@ -1,0 +1,97 @@
+package secuenciador.memoria;
+
+import java.util.LinkedList;
+
+import planificador.gestorPlanes.Meta;
+
+/**
+ * Clase que representa la simplificaciun implementada de un RAP 
+ * (Reactive Action Package). Define el conjunto de habilidades 
+ * iduneas para llevar a cabo una tarea en funciun de la submeta 
+ * que se busque lograr.
+ * 
+ * @author Josu Luis Duaz Cebriun
+ * @version 1.0
+ * 
+ */
+public class RAP {
+	
+	/**
+	 * Identificador unico del RAP; se utiliza la cadena "RAP" seguida de un 
+	 * numero entero.
+	 */
+	private String identificador;
+	
+	/**
+	 * Meta asociada al RAP, el uso del cual permite alcanzar el objetivo de usta. 
+	 * Tambiun identifica unuvocamente al RAP.
+	 */
+	private Meta submeta;
+	
+	/**
+	 * Lista de habilidades asociadas al RAP, utiles para alcanzar el objetivo de 
+	 * la meta correspondiente.
+	 */
+	private LinkedList<String> habilidades;
+	
+	
+	/**
+	 * Inicializa por defecto con los atributos a null.
+	 */
+	public RAP(){}
+	
+	/**
+	 * Inicializa el RAP, asignundole un identificador, la meta que es capaz de alcanzar 
+	 * mediante su uso y las habilidades asociadas.
+	 * 
+	 * @param id El identificador del RAP
+	 * @param subm La meta asociada al RAP
+	 * @param habs El conjunto de los nombres de las habilidades que permiten alcanzar la meta
+	 */
+	public RAP(String id, Meta subm, String[] habs){
+		this.identificador = id;
+		this.submeta = subm;
+		this.habilidades = new LinkedList<String>();
+		for(int i=0; i<habs.length; i++){
+			this.habilidades.add(habs[i]);
+		}
+	}
+	
+	
+	/**
+	 * Devuelve el identificador unico del RAP.
+	 * 
+	 * @return El identificador del RAP
+	 */
+	public String getId(){
+		return this.identificador;
+	}
+	
+	/**
+	 * Devuelve la meta que se alcanza con la utilizaciun del RAP.
+	 * 
+	 * @return La meta asociada al RAP
+	 */
+	public Meta getMeta(){
+		return this.submeta;
+	}
+	
+	/**
+	 * Devuelve la lista de habilidades que permiten alcanzar la meta del RAP.
+	 * 
+	 * @return La lista de nombres de las habilidades
+	 */
+	public LinkedList<String> getHabilidades(){
+		return this.habilidades;
+	}
+	
+	/**
+	 * Asigna un nuevo identificador al RAP.
+	 * 
+	 * @param id El nuevo identificador a asignar al RAP
+	 */
+	public void setId(String id){
+		this.identificador = id;
+	}
+
+}

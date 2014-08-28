@@ -1,0 +1,260 @@
+package controlador.navegacion;
+
+import controlador.gestorHabilidades.Habilidad;
+import infraestructura.*;
+
+/**
+ * Clase que hereda de Habilidad y define las características 
+ * propias de esta habilidad e implementa su bucle de ejecución 
+ * y la condición del evento de finalización.
+ * 
+ * @author José Luis Díaz Cebrián
+ * @version 1.0
+ * 
+ */
+public class Girar extends Habilidad{
+
+	/**
+	 * Indica la dirección del giro que efectuará el robot. A "true" si se desea 
+	 * girar a la izquierda.
+	 */
+	private boolean izquierda;
+	
+	/**
+	 * Indica el factor (de 1 a 5) con el que se desea efectuar el giro. A mayor 
+	 * factor, más velocidad y fuerza en el giro.
+	 */
+	private int factor;
+	
+	/**
+	 * Indica el ángulo que se desea girar (de 0 a 360).
+	 */
+	private int angulo_final;
+	
+	/**
+	 * Indica el ángulo que ya se lleva girado desde que se empezó a ejecutar la 
+	 * habilidad.
+	 */
+	private int angulo_actual;
+	
+	
+	/**
+	 * Inicializa los atributos de la habilidad según resultados obtenidos en experimentaciones
+	 * previas de robótica.
+	 * 
+	 * @param robot El robot del sistema que hace uso de la habilidad
+	 * @param sim A "true" si se utiliza la arquitectura sobre simulador
+	 * @param izda A "true" si se desea girar a la izquieda, a "false" en caso contrario
+	 * @param fact La fuerza (de 1 a 5) con la que se realiza el giro
+	 * @param ang El ángulo en grados que se desea girar
+	 * 
+	 */
+	public Girar(Robot robot, boolean sim, boolean izda, int fact, int ang){
+		super("Girar", robot, sim);
+		this.izquierda = izda;
+		this.factor = fact;
+		this.angulo_final = ang;
+		this.angulo_actual = 0;
+	}
+	
+	
+	/**
+	 * Devuelve la dirección del giro que está efectuando el robot.
+	 * 
+	 * @return "true" si el giro es a la izquierda, "false" si es a la derecha
+	 * 
+	 */
+	public boolean getGiro(){
+		return this.izquierda;
+	}
+	
+	/**
+	 * Devuelve el ángulo total del giro que está efectuando el robot.
+	 * 
+	 * @return El ángulo objetivo del giro
+	 * 
+	 */
+	public int getAngulo(){
+		return this.angulo_final;
+	}
+	
+	/**
+	 * Asigna una dirección al giro que va a efectuar el robot.
+	 * 
+	 * @param izda A "true" si se desea un giro a la izquierda, "false" en caso contrario
+	 */
+	public void setGiro(boolean izda){
+		this.izquierda = izda;
+	}
+	
+	/**
+	 * Asigna un nuevo ángulo al giro que va a efectuar el robot.
+	 * 
+	 * @param ang El nuevo ángulo de giro
+	 */
+	public void setAngulo(int ang){
+		this.angulo_final = ang;
+	}
+	
+	/**
+	 * @see Habilidad#ejecutar()
+	 */
+	public void ejecutar(){
+		int[] ruedas = new int[2]; //Izda-Dcha
+		
+		if(super.getSim())
+			ruedas = ejecSimulador();
+		else
+			ruedas = ejecRobotReal();
+		
+		Motor m = (Motor) super.getRobot().getActuador("motor");
+		m.setRuedas(ruedas[0], ruedas[1]);	
+	}
+	
+	/**
+	 * Da un valor a las ruedas del robot teniendo en cuenta los umbrales
+	 * y pequeñas diferencias en el algoritmo para el simulador.
+	 * 
+	 * @return Las velocidades a asignar a las ruedas del robot
+	 */
+	public int[] ejecSimulador(){
+		
+		int ruedas[] = new int[2]; //Izda-Dcha
+		
+		/* Por defecto, giro a la izquierda */
+		switch(factor){
+		case 1: //Giro muy débil
+			ruedas[0] = 0;
+			ruedas[1] = 10;
+			break;
+		case 2: //Giro débil
+			ruedas[0] = 0;
+			ruedas[1] = 20;
+			break;
+		case 3: //Giro normal
+			ruedas[0] = 0;
+			ruedas[1] = 30;
+			break;
+		case 4: //Giro fuerte
+			ruedas[0] = 0;
+			ruedas[1] = 40;
+			break;
+		case 5: //Giro muy fuerte
+			ruedas[0] = 0;
+			ruedas[1] = 50;
+			break;
+		default:
+			ruedas[0] = 0;
+			ruedas[1] = 0;
+		}
+		
+		if(!izquierda){ //Si giro a la derecha, cambio de ruedas
+			int aux = ruedas[0];
+			ruedas[0] = ruedas[1];
+			ruedas[1] = aux;
+		}
+		
+		return ruedas;
+	}
+	
+	/**
+	 * Da un valor a las ruedas del robot teniendo en cuenta los umbrales
+	 * y pequeñas diferencias en el algoritmo para el robot real sobre ARIA.
+	 * 
+	 * @return Las velocidades a asignar a las ruedas del robot
+	 */
+	public int[] ejecRobotReal(){
+		
+		int ruedas[] = new int[2]; //Izda-Dcha
+		
+		/* Por defecto, giro a la izquierda */
+		switch(factor){
+		case 1: //Giro muy débil
+			ruedas[0] = 0;
+			ruedas[1] = 20;
+			break;
+		case 2: //Giro débil
+			ruedas[0] = 0;
+			ruedas[1] = 40;
+			break;
+		case 3: //Giro normal
+			ruedas[0] = 0;
+			ruedas[1] = 60;
+			break;
+		case 4: //Giro fuerte
+			ruedas[0] = 0;
+			ruedas[1] = 80;
+			break;
+		case 5: //Giro muy fuerte
+			ruedas[0] = 0;
+			ruedas[1] = 100;
+			break;
+		default:
+			ruedas[0] = 0;
+			ruedas[1] = 0;
+		}
+		
+		if(!izquierda){ //Si giro a la derecha, cambio de ruedas
+			int aux = ruedas[0];
+			ruedas[0] = ruedas[1];
+			ruedas[1] = aux;
+		}
+		
+		return ruedas;
+	}
+	
+	/**
+	 * @see Habilidad#comprobarExito()
+	 */
+	public boolean comprobarExito(){
+		boolean exito = false;
+		
+		if(super.getSim())
+			exito = exitoSimulador();
+		else
+			exito = exitoRobotReal();
+		
+		return exito;
+	}
+
+	/**
+	 * Comprueba la condición de éxito de la habilidad teniendo en cuenta los 
+	 * umbrales y pequeñas diferencias en el algoritmo para el simulador.
+	 * 
+	 * @return "true" si se ha ejecutado con éxito la habilidad, "false" en caso contrario
+	 */
+	public boolean exitoSimulador(){
+		boolean exito = false;
+	
+		if(this.angulo_actual>=this.angulo_final){
+			exito = true;
+			this.angulo_actual = 0;
+		} else{
+			/* Sumar al ángulo a razón de factor*6 */
+			this.angulo_actual = this.angulo_actual + (this.factor * 6);
+		}
+		
+		return exito;
+	}
+	
+	/**
+	 * Comprueba la condición de éxito de la habilidad teniendo en cuenta los 
+	 * umbrales y pequeñas diferencias en el algoritmo para el robot real sobre ARIA.
+	 * 
+	 * @return "true" si se ha ejecutado con éxito la habilidad, "false" en caso contrario
+	 */
+	public boolean exitoRobotReal(){
+		boolean exito = false;
+		
+		if(this.angulo_actual>=this.angulo_final){
+			exito = true;
+			this.angulo_actual = 0;
+		} else{
+			/* Sumar el ángulo a razón del factor */
+			this.angulo_actual = this.angulo_actual + this.factor;
+		}
+		
+		return exito;
+	}
+	
+}

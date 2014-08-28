@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" hostname="ubuntu-pc" name="org.ros.rosjava_geometry.TransformTest" tests="5" time="0.163" timestamp="2013-04-04T10:33:40">
+  <properties />
+  <testcase classname="org.ros.rosjava_geometry.TransformTest" name="testInvert" time="0.001" />
+  <testcase classname="org.ros.rosjava_geometry.TransformTest" name="testInvertRandom" time="0.111" />
+  <testcase classname="org.ros.rosjava_geometry.TransformTest" name="testMultiplyRandom" time="0.038" />
+  <testcase classname="org.ros.rosjava_geometry.TransformTest" name="testScale" time="0.002" />
+  <testcase classname="org.ros.rosjava_geometry.TransformTest" name="testMultiply" time="0.002" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

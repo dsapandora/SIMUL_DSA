@@ -1,0 +1,41 @@
+package controlador.vision;
+
+import infraestructura.Robot;
+import controlador.gestorHabilidades.Habilidad;
+
+/**
+ * Clase abstracta que hereda de Habilidad y define las características 
+ * propias de esta habilidad e implementa su bucle de ejecución 
+ * y la condición del evento de finalización.  Sirve como ejemplo de 
+ * extensibilidad de la funcionalidad del robot a la hora de añadir 
+ * nuevas habilidades que puede ejecutar.
+ * 
+ * @author José Luis Díaz Cebrián
+ * @version 1.0
+ * 
+ */
+public abstract class DetectarBaliza extends Habilidad{
+
+	/**
+	 * TODO Incluir los atributos necesarios para ejecutar la nueva habilidad.
+	 */
+	
+
+	/**
+	 * TODO Completar el código del constructor de la habilidad.
+	 */
+	public DetectarBaliza(Robot robot, boolean sim){
+		super("DetectarBaliza", robot, sim);
+	}
+		
+	/**
+	 * @see Habilidad#ejecutar()
+	 */
+	public abstract void ejecutar();
+	
+	/**
+	 * @see Habilidad#comprobarExito()
+	 */
+	public abstract boolean comprobarExito();
+		
+}

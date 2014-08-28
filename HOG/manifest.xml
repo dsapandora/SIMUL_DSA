@@ -1,0 +1,20 @@
+<package>
+  <description brief="HOG">
+
+     HOG
+
+  </description>
+  <author>Ariel Vernaza</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/HOG</url>
+   <depend package="image_transport"/>
+  <depend package="roscpp"/>
+  <depend package="std_msgs"/>
+  <depend package="opencv2"/>
+  <depend package="uvc_camera"/>
+  <depend package="cv_bridge" />
+  <rosdep name="opencv2"/>
+</package>
+
+

@@ -1,0 +1,66 @@
+package utilidades;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+/**
+ * Clase auxiliar de envoltura a la entrada estándar por teclado.
+ * 
+ * @author José Luis Díaz Cebrián
+ * @version 1.0
+ * 
+ */
+public class Teclado{
+    
+    /**
+     * Representación de la entrada estándar (System.in).
+     */
+    private BufferedReader entrada;
+    
+    
+    /**
+     * Crea un nuevo Teclado capturando la excepción que se puede producir y emitiendo un 
+     * mensaje de error en dicho caso.
+     */
+    public Teclado(){
+        try{
+            entrada = new BufferedReader(new InputStreamReader(System.in));
+        }catch(Exception e){
+            System.out.println("Error en la lectura de teclado.");
+        }
+    }
+    
+    
+    /**
+     * Lee un carácter de la entrada estándar.
+     * 
+     * @return El carácter leído
+     */
+    public char leerCaracter(){
+        char c;
+        c = ' ';
+        try{
+            c = (char)entrada.read();
+        }catch(Exception e){
+            System.out.println("Error en la lectura de teclado de un carácter.");
+        }
+        return c; 
+    }
+    
+    /**
+     * Lee una línea de la entrada estándar.
+     * 
+     * @return La línea leída
+     */
+    public String leerLinea(){
+        String linea;
+        linea = new String();
+        try{
+            linea = entrada.readLine();
+        }catch(Exception e){
+            System.out.println("Error en la lectura de teclado de una línea.");
+        }
+        return linea;
+    }
+    
+}

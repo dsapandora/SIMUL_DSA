@@ -1,0 +1,100 @@
+package secuenciador.interprete;
+
+import java.util.HashMap;
+import java.util.Map;
+import planificador.gestorPlanes.Meta;
+import planificador.gestorPlanes.Metas;
+
+/**
+ * Agregado de tareas, se trata de la lista que incluye 
+ * todas las tareas posibles que puede llevar a cabo el 
+ * robot. Esta clase las engloba y proporciona el acceso a ellas. 
+ * 
+ * @author José Luis Díaz Cebrián
+ * @version 1.0
+ * 
+ */
+public class Tareas {
+
+	/**
+	 * Conjunto de tareas que forman la instancia del agregado. Se identifican dentro del conjunto
+	 * por la meta correspondiente que se alcanza al llevar a cabo la habilidad.
+	 */
+	private Map<Meta, Tarea> tareas;
+	
+	/**
+	 * Inicializa el conjunto o librería de tareas del sistema, creando y rellenando dicho 
+	 * librería.
+	 * 
+	 * @param libreria Conjunto de todas las metas del sistema, con las que se crea una relación 
+	 * uno a uno con las tareas
+	 */
+	public Tareas(Metas libreria){
+		this.tareas = new HashMap<Meta, Tarea>();
+		this.tareas.put(libreria.getMeta("LlegarA"), new Tarea("MantenerDireccion", 
+				libreria.getMeta("LlegarA")));
+		this.tareas.put(libreria.getMeta("DetectarAlgo"), new Tarea("EncontrarAlgo", 
+				libreria.getMeta("DetectarAlgo")));
+		this.tareas.put(libreria.getMeta("PuntoEnfrente"), new Tarea("Orientarse", 
+				libreria.getMeta("PuntoEnfrente")));
+		this.tareas.put(libreria.getMeta("SuperarChoque"), new Tarea("Retroceder", 
+				libreria.getMeta("SuperarChoque")));
+		this.tareas.put(libreria.getMeta("MismaDistancia"), new Tarea("SituarseMedio", 
+				libreria.getMeta("MismaDistancia")));
+		this.tareas.put(libreria.getMeta("EvitarChoque"), new Tarea("Rodear", 
+				libreria.getMeta("EvitarChoque")));
+		this.tareas.put(libreria.getMeta("DistanciaRecorrida"), new Tarea("MantenerTrayectoria", 
+				libreria.getMeta("DistanciaRecorrida")));
+	}
+	
+	
+	/**
+	 * Devuelve el conjunto de tareas.
+	 * 
+	 * @return El conjunto de tareas
+	 * 
+	 */
+	public Map<Meta, Tarea> getTareas(){
+		return this.tareas;
+	}
+	
+	/**
+	 * Devuelve una tarea concreta que forma parte de la librería de tareas.
+	 * 
+	 * @param submeta La meta que identifica la tarea
+	 * @return La tarea que alcanza dicha meta al llevarla a cabo
+	 * 
+	 */
+	public Tarea getTarea(Meta submeta){
+		return this.tareas.get(submeta);
+	}
+	
+	/**
+	 * Añade una tarea al conjunto de tareas
+	 * 
+	 * @param tarea La tarea a añadir al conjunto
+	 * 
+	 */
+	public void anyadirTarea(Tarea tarea){
+		this.tareas.put(tarea.getMeta(), tarea);
+	}
+	
+	/**
+	 * Elimina una tarea concreta del conjunto de habilidades.
+	 * 
+	 * @param tarea La tarea a eliminar del conjunto
+	 * 
+	 */
+	public void eliminarTarea(Tarea tarea){
+		this.tareas.remove(tarea.getMeta());
+	}
+	
+	/**
+	 * Elimina todas las tareas del conjunto, dejándolo vacío para su posterior redefinición.
+	 */
+	public void eliminarTodas(){
+		this.tareas.clear();
+	}
+	
+	
+}

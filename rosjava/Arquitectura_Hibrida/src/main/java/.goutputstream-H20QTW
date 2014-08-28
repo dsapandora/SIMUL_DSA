@@ -1,0 +1,20 @@
+import java.util.LinkedList;
+
+import planificador.gestorPlanes.Accion;
+import planificador.gestorPlanes.Meta;
+import planificador.gestorPlanes.Plan;
+import secuenciador.interprete.Tarea;
+import infraestructura.Actuador;
+import infraestructura.Bumpers;
+import infraestructura.Estado;
+import infraestructura.Laser;
+import infraestructura.Motor;
+import infraestructura.Robot;
+import infraestructura.Sensor;
+import infraestructura.Sonar;
+
+import com.mobilerobots.Aria.*;
+
+public class pruebaAriaAvanzada {
+	
+	/* N

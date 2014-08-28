@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Export-Package: org.ros.rosjava_tutorial_right_hand_rule;uses:="sensor
+ _msgs,org.ros.node.topic,geometry_msgs,org.ros.node,org.ros.message,o
+ rg.ros.namespace";version="0.0.0.SNAPSHOT"
+Bundle-Version: 0.0.0.SNAPSHOT
+Tool: Bnd-1.50.0
+Bundle-Name: rosjava_tutorial_right_hand_rule
+Bnd-LastModified: 1366193960383
+Created-By: 1.6.0_27 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: ros.rosjava_core.rosjava_tutorial_right_hand_rule
+Import-Package: geometry_msgs;version="[0.0,1)",org.ros.message;versio
+ n="[0.0,1)",org.ros.namespace;version="[0.0,1)",org.ros.node,org.ros.
+ node.topic,sensor_msgs;version="[0.0,1)"
+

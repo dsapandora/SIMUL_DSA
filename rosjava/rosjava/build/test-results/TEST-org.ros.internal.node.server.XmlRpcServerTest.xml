@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" hostname="ubuntu-pc" name="org.ros.internal.node.server.XmlRpcServerTest" tests="2" time="0.016" timestamp="2013-04-04T10:33:28">
+  <properties />
+  <testcase classname="org.ros.internal.node.server.XmlRpcServerTest" name="testGetPublicUri" time="0.014" />
+  <testcase classname="org.ros.internal.node.server.XmlRpcServerTest" name="testGetPrivateUri" time="0.001" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

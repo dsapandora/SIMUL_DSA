@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<NeuralNetwork Version="4">
+    <InputsOutputsInformation Version="4">
+        <InputsName>
+            <InputName Index="1">x</InputName>
+            <InputName Index="2">y</InputName>
+        </InputsName>
+        <InputsUnits>
+            <InputUnits Index="1"></InputUnits>
+            <InputUnits Index="2"></InputUnits>
+        </InputsUnits>
+        <InputsDescription>
+            <InputDescription Index="1"></InputDescription>
+            <InputDescription Index="2"></InputDescription>
+        </InputsDescription>
+        <OutputsName>
+            <OutputName Index="1">z</OutputName>
+        </OutputsName>
+        <OutputsUnits>
+            <OutputUnits Index="1"></OutputUnits>
+        </OutputsUnits>
+        <OutputsDescription>
+            <OutputDescription Index="1"></OutputDescription>
+        </OutputsDescription>
+        <Display>1</Display>
+    </InputsOutputsInformation>
+    <MultilayerPerceptron Version="4">
+        <Architecture>2 8 1</Architecture>
+        <LayersActivationFunction>HyperbolicTangent Linear</LayersActivationFunction>
+        <Parameters>-0.194217 0.735301 0.0342457 -0.91758 0.568144 0.797131 0.70421 -0.0889608 -0.109745 -0.889946 -0.907135 0.230786 0.910739 0.759724 -0.683868 -0.164209 0.690983 0.614067 0.794926 0.316151 1.26923 0.244308 -0.932346 -0.430667 -1.46179 -1.86251 -0.251611 0.173961 -2.28245 -0.528548 -0.757951 0.511307 -0.941867</Parameters>
+        <Display>1</Display>
+    </MultilayerPerceptron>
+    <ScalingLayer Version="4">
+        <Minimums>-0.349066 -0.5</Minimums>
+        <Maximums>100000 100000</Maximums>
+        <Means>0 0</Means>
+        <StandardDeviations>1 1</StandardDeviations>
+        <ScalingMethod>MeanStandardDeviation</ScalingMethod>
+        <Display>1</Display>
+    </ScalingLayer>
+    <UnscalingLayer Version="4">
+        <Minimums>-1</Minimums>
+        <Maximums>1</Maximums>
+        <Means>0</Means>
+        <StandardDeviations>1</StandardDeviations>
+        <UnscalingMethod>MinimumMaximum</UnscalingMethod>
+        <Display>1</Display>
+    </UnscalingLayer>
+    <ScalingLayerFlag>0</ScalingLayerFlag>
+    <UnscalingLayerFlag>0</UnscalingLayerFlag>
+    <ProbabilisticLayerFlag>0</ProbabilisticLayerFlag>
+    <BoundingLayerFlag>0</BoundingLayerFlag>
+    <ConditionsLayerFlag>0</ConditionsLayerFlag>
+    <Display>1</Display>
+</NeuralNetwork>

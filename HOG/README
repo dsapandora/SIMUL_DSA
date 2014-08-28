@@ -1,0 +1,22 @@
+From hogCompute3, we did successfully trained the HOG detector. Now we want to do Hard training. According to todo in 3.
+
+http://opencv-users.1802565.n2.nabble.com/any-news-on-HOG-td5500199.html#a5814149
+Hi, 
+
+The method can be summarized as below: 
+
+        1. you should collect several images that do not contain any positive sample 
+(e.g. 1000 images). 
+        2. randomly crop some windows (e.g 10 window per image) from negative samples 
+and re-size them to your HOG search window (e.g. 64x128). 
+        3. use them as negatives to train your system. 
+        4. After you build the training vector, loop it around all of your preliminary 
+negative images (first 1000 images). 
+        5. obviously, any detected windows is false alarm. so use them in addition to 
+previous randomly selected windows to retrain your detector. this can 
+dramatically boost your detector's performance. but do not repeat it for second 
+time, because for the second time, the improvement will be negligible.good luck, 
+
+Ehsan 
+
+

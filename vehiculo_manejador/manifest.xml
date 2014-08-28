@@ -1,0 +1,16 @@
+<package>
+  <description brief="vehiculo_manejador">
+
+     vehiculo_manejador
+
+  </description>
+  <author>Ariel Vernaza</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/vehiculo_manejador</url>
+  <depend package="roscpp"/>
+
+
+</package>
+
+

@@ -1,0 +1,93 @@
+package secuenciador.memoria;
+
+import planificador.modeloMundo.Nodo;
+import infraestructura.Estado;
+import infraestructura.Robot;
+
+/**
+ * Clase que monitoriza el estado del robot y el modelo 
+ * del mundo, registrando los cambios que se producen en 
+ * ambos elementos. Se encarga también de notificar al hilo 
+ * de ejecución del secuenciador si se requiere de una 
+ * replanificación debido a alguno de esos cambios.
+ * 
+ * @author José Luis Díaz Cebrián
+ * @version 1.0
+ * 
+ */
+public class Monitor {
+	
+	/**
+	 * Referencia al robot del sistema, cuyo estado será monitorizado.
+	 */
+	private Robot robot;
+	
+	/**
+	 * Estado actual del robot.
+	 */
+	private Estado estado;
+	
+	/**
+	 * Posición actual del robot dentro del mapa del mundo.
+	 */
+	private Nodo posicion_robot;
+	
+	
+	/**
+	 * Inicializa por defecto con los atributos a null.
+	 */
+	public Monitor(){}
+	
+	/**
+	 * Inicializa el monitor, asignando a éste la referencia al robot del sistema y
+	 * actualizando por primera vez su estado.
+	 * 
+	 * @param robot El robot a monitorizar
+	 */
+	public Monitor(Robot robot){
+		this.robot = robot;
+		this.estado = robot.getEstado();
+		this.posicion_robot = this.estado.getPosicion();
+	}
+	
+	/**
+	 * Devuelve el último estado del robot monitorizado.
+	 * 
+	 * @return El estado del robot
+	 */
+	public Estado getEstado(){
+		return this.estado;
+	}
+	
+	/**
+	 * Devuelve la última posición dentro del mapa en la que se encontraba el robot.
+	 * 
+	 * @return La posición del robot
+	 */
+	public Nodo getPosicion(){
+		return this.posicion_robot;
+	}
+	
+	/**
+	 * Actualiza el estado almacenado con el estado actual real del robot.
+	 */
+	public void actualizarEstado(){
+		this.estado = this.robot.getEstado();
+	}
+
+	/**
+	 * Actualiza la posición almacenada con la posición actual real del robotl.
+	 */
+	public void actualizarPosicion(){
+		this.posicion_robot = this.robot.getEstado().getPosicion();
+	}
+	
+	/**
+	 * Método auxiliar que sirve para realizar una única llamada de actualización cuando
+	 * es necesario monitorizar el estado y la posición actual del robot.
+	 */
+	public void actualizar(){
+		this.actualizarEstado();
+		this.actualizarPosicion();
+	}
+}

@@ -1,0 +1,19 @@
+Cómo abrir y ejecutar el proyecto usando el entorno de desarrollo Eclipse:
+
+1. Hacer doble clic sobre el archivo ejecutable de Eclipse.
+2. Pinchar en File -> New -> Project.
+3. Seleccionar Java -> Java Project.
+4. Dar un nombre al proyecto y seleccionar Create project form existing source.
+5. Seleccionar el directorio src contenido en la carpeta raíz Arquitectura_Hibrida.
+6. Pinchar en Aceptar, y posteriormente en Finalizar.
+7. Es necesario incluir algunas librerías al proyecto:
+	7.1. Seleccionar el proyecto creado y pinchar en Project -> Properties.
+	7.2. Seleccionar Java Build Path.
+	7.3. En la pestaña Libraries, pinchar en Add External JARs.
+	7.4. Seleccionar la librería de Webots (com.cyberbotics.webots.Controller)
+	7.5. Repetir el paso 7.3 con las dos librerías de Aria (com.mobilerobots.Aria.*)
+	7.6. En la pestaña Order and Export, seleccionar estas librerías.
+	7.7. Pulsar OK.
+8. Se puede compilar el código simplemente guardando el proyecto.
+9. Para ejecutar un controlador en Webots, utilizar el simulador.
+10. Para ejecutar un controlador en el robot Pioneer 3-DX, conectar el robot al PC y pinchar en el botón Run.
